@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
 body {
     background-color: #fafafa;
 }
@@ -6,9 +11,19 @@ h1 {
     font-size: 3.813rem;
     font-weight: 300;
 }
+
+h4 {
+    font-size: 1.9375rem;
+    font-weight: 400;
+}
 h5 {
     font-size: 1.563rem;
     font-weight: 300;
+}
+
+h6 {
+    font-size: 1.25rem;
+    font-weight: 400;
 }
 
 a {
@@ -23,6 +38,76 @@ a {
 
 .hero-section {
     min-height: 700px;
+}
+
+.skills {
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.skills > div {
+    border-radius: 0.25rem;
+    padding: 2rem;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    scroll-snap-align: start;
+    transition: all 0.3s ease-out;
+}
+
+.skills .skill-level {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 15px 0;
+}
+
+.skills h4 {
+    color: #115544;
+    margin-bottom: 15px;
+}
+
+.skill {
+    padding: 0.625rem;
+    border-radius: 0.25rem;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    margin-right: 10px;
+    transition: all 0.1s ease-in;
+}
+
+.skill:hover {
+    background-color: #555;
+    color: white;
+    transform: scale(1.05);
+}
+
+.skill-text {
+    border-left: 3px solid #115544a1;
+    height: fit-content;
+    padding: 15px;
+}
+
+.skill-blur {
+    filter: blur(5px);
+    transform: scale(0.9);
+}
+
+.skills-buttons {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.skills-buttons::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.skills-buttons > a.clicked {
+    background-color: green;
+    color: #fff !important;
+    border: 0 !important;
 }
 
 .blink-text {
@@ -45,7 +130,15 @@ a {
     h1 {
         font-size: 2.5rem;
     }
+
+    h4 {
+        font-size: 1.55rem;
+    }
     h5 {
         font-size: 1rem;
+    }
+
+    .hero-section {
+        min-height: 500px;
     }
 }
