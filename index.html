@@ -28,7 +28,12 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#about-me">About me</a>
+                            <a class="nav-link" href="#skillsSection"
+                                >My skills</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About me</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">My projects</a>
@@ -143,7 +148,120 @@
             </svg>
         </section>
 
+        <section id="skillsSection">
+            <div class="container my-5" id="skillsSectionContent">
+                <h3 class="text-center typing-text">
+                    > <span class="heading-text">My skills</span
+                    ><span class="blink-text">_</span>
+                </h3>
+                <div
+                    id="skills-buttons"
+                    class="row my-3 flex-nowrap overflow-scroll justify-content-md-center skills-buttons"
+                >
+                    <a
+                        class="col-lg-3 col-auto text-nowrap text-center text-dark border border-dark rounded p-2 text-decoration-none clicked"
+                        href="#programming-languages"
+                        id="programming-languages-btn"
+                        >Programming Languages</a
+                    >
+                    <a
+                        class="mx-3 col-lg-3 col-auto text-nowrap text-center text-dark border border-dark rounded p-2 text-decoration-none"
+                        href="#technologies"
+                        id="technologies-btn"
+                        >Technologies</a
+                    >
+
+                    <a
+                        class="col-lg-3 col-auto text-nowrap text-center text-dark border border-dark rounded p-2 text-decoration-none"
+                        href="#software"
+                        id="software-btn"
+                        >Software</a
+                    >
+                </div>
+
+                <div class="row">
+                    <div
+                        id="skills"
+                        class="skills overflow-hidden flex-nowrap d-flex justify-content-lg-between justify-content-start"
+                    >
+                        <div class="col-lg-4 col-12" id="programming-languages">
+                            <h4>Programming languages</h4>
+                            <div class="d-flex flex-column">
+                                <div class="skill-level">
+                                    <h6 class="w-100">Expert</h6>
+                                    <span class="skill">JavaScript</span>
+                                    <span class="skill">TypeScript</span>
+                                </div>
+                                <div class="skill-level">
+                                    <h6 class="w-100">Advanced</h6>
+                                    <span class="skill">Java</span>
+                                    <span class="skill">SQL</span>
+                                    <span class="skill">Python</span>
+                                </div>
+                                <div class="skill-level">
+                                    <h6 class="w-100">Above average</h6>
+                                    <span class="skill">C#</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-4 col-12 skill-blur"
+                            id="technologies"
+                        >
+                            <h4>Technologies</h4>
+                            <div class="d-flex flex-column">
+                                <div class="skill-level">
+                                    <h6 class="w-100">Expert</h6>
+                                    <span class="skill">React.JS</span>
+                                    <span class="skill">Express.JS</span>
+                                    <span class="skill">Tailwind CSS</span>
+                                    <span class="skill">Bootstrap CSS</span>
+                                    <span class="skill">Wordpress</span>
+                                </div>
+                                <div class="skill-level">
+                                    <h6 class="w-100">Advanced</h6>
+                                    <span class="skill">Next.JS</span>
+                                    <span class="skill">Socket.IO</span>
+                                    <span class="skill">MySQL</span>
+                                </div>
+                                <div class="skill-level">
+                                    <h6 class="w-100">Above average</h6>
+                                    <span class="skill">Mongo DB</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12 skill-blur" id="software">
+                            <h4>Software</h4>
+                            <div class="d-flex flex-column">
+                                <div class="skill-level">
+                                    <h6 class="w-100">Expert</h6>
+                                    <span class="skill">Figma</span>
+                                    <span class="skill"
+                                        >Visual Studio Code</span
+                                    >
+                                    <span class="skill">PhpMyAdmin</span>
+                                </div>
+                                <div class="skill-level">
+                                    <h6 class="w-100">Advanced</h6>
+                                    <span class="skill">GitHub</span>
+                                    <span class="skill">Jira</span>
+                                    <span class="skill">NetBeans</span>
+                                    <span class="skill">Postman</span>
+                                </div>
+                                <div class="skill-level">
+                                    <h6 class="w-100">Above average</h6>
+                                    <span class="skill">AWS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/main.js"></script>
         <script src="./js/animations.js"></script>
     </body>
 </html>
