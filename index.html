@@ -3,19 +3,46 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Roman Ivanov | Web developer</title>
         <link rel="stylesheet" href="./css/bootstrap.min.css" />
         <link rel="stylesheet" href="./css/style.css" />
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
         />
+        <title>Roman Ivanov | Web developer</title>
+
+        <link rel="icon" href="./images/favicon.svg" type="image/x-icon" />
+        <meta
+            name="description"
+            content="Explore my coding journey. Connect with me to collaborate and innovate in the world of software development."
+        />
+
+        <meta
+            name="keywords"
+            content="Software Developer, Portfolio, Coding Journey, Projects Showcase, Collaboration, Personal website, Web Development, Programming, Skills Showcase, Self-Taught, Full Stack Development, JavaScript, Python, Front-End, Back-End, UI/UX Design, Responsive Web Design, Creative Coding, Technical Expertise, Personal Growth"
+        />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://justenough1.github.io/" />
+        <meta property="og:title" content="Roman Ivanov | Web developer" />
+        <meta
+            property="og:description"
+            content="Explore my coding journey. Connect with me to collaborate and innovate in the world of software development."
+        />
+        <meta property="og:image" content="./images/portfolio-logo.svg" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://justenough1.github.io/" />
+        <meta property="twitter:title" content="Roman Ivanov | Web developer" />
+        <meta
+            property="twitter:description"
+            content="Explore my coding journey. Connect with me to collaborate and innovate in the world of software development."
+        />
+        <meta property="twitter:image" content="./images/portfolio-logo.svg" />
     </head>
     <body>
-        <div class="bg-warning text-center p-1 text-dark">
-            Work in progress.
-        </div>
-
         <nav class="navbar sticky-top navbar-expand-lg header">
             <div class="container">
                 <button
@@ -32,7 +59,7 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#about-me-section"
+                            <a class="nav-link ps-0" href="#about-me-section"
                                 >About me</a
                             >
                         </li>
@@ -48,7 +75,9 @@
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact me</a>
+                            <a class="nav-link" href="#feedback-section"
+                                >Contact me</a
+                            >
                         </li>
                     </ul>
                     <ul
@@ -92,9 +121,12 @@
                         >
                             My works
                         </a>
-                        <button class="btn btn-lg btn-outline-dark">
+                        <a
+                            href="#feedback-section"
+                            class="btn btn-lg btn-outline-dark"
+                        >
                             Contact me
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -160,8 +192,8 @@
             </svg>
         </section>
 
-        <section id="about-me-section">
-            <div class="container my-5 position-relative overflow-hidden">
+        <section id="about-me-section" class="py-5">
+            <div class="container position-relative overflow-hidden">
                 <h3 class="text-center typing-text">
                     > <span class="text-center heading-text">My journey</span
                     ><span class="blink-text">_</span>
@@ -303,8 +335,8 @@
             </div>
         </section>
 
-        <section id="skills-section">
-            <div class="container my-5" id="skillsSectionContent">
+        <section id="skills-section" class="py-5">
+            <div class="container" id="skillsSectionContent">
                 <h3 class="text-center typing-text">
                     > <span class="heading-text">My skills</span
                     ><span class="blink-text">_</span>
@@ -415,8 +447,8 @@
             </div>
         </section>
 
-        <section id="projects-section">
-            <div class="container my-">
+        <section id="projects-section" class="py-5">
+            <div class="container">
                 <h3 class="text-center typing-text">
                     > <span class="heading-text">My projects</span
                     ><span class="blink-text">_</span>
@@ -492,6 +524,173 @@
                 </div>
             </div>
         </section>
+
+        <section id="feedback-section" class="py-5">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <form
+                        action="https://formsubmit.co/roman.ivanov.dev@gmail.com"
+                        method="POST"
+                        class="shadow-lg col-lg-8 col-12 text-white p-5 border border-2 border-dark-subtle rounded bg-dark"
+                    >
+                        <h1 class="typing-text text-white">
+                            >
+                            <span class="heading-text">Let's keep in touch</span
+                            ><span class="blink-text">_</span>
+                        </h1>
+                        <h3 class="text-secondary mb-5">
+                            Please, fill out this form
+                        </h3>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <input
+                                    type="text"
+                                    class="form-control rounded bg-dark text-white border border-secondary"
+                                    placeholder="Your firstname"
+                                    name="Firstname"
+                                    aria-label="Firstname"
+                                    aria-describedby="addon-wrapping"
+                                    required
+                                />
+                            </div>
+                            <div class="col-lg-6 col-12 mt-lg-0 mt-3">
+                                <input
+                                    type="text"
+                                    class="form-control rounded bg-dark text-white border border-secondary"
+                                    placeholder="Your lastname"
+                                    name="Lastname"
+                                    aria-label="Lastname"
+                                    aria-describedby="addon-wrapping"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="row mt-3 align-items-center">
+                            <div class="col-lg-6 col-12">
+                                <input
+                                    type="email"
+                                    class="form-control rounded bg-dark text-white border border-secondary"
+                                    placeholder="Your email"
+                                    name="Email"
+                                    aria-label="Email"
+                                    aria-describedby="addon-wrapping"
+                                    required
+                                />
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <small style="color: #25d14b"
+                                    >This email will be used for feedback</small
+                                >
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <textarea
+                                    maxlength="250"
+                                    rows="5"
+                                    id="contact-textarea"
+                                    class="form-control rounded bg-dark text-white border border-secondary"
+                                    placeholder="Type message here"
+                                    name="Message"
+                                    required
+                                ></textarea>
+                                <small
+                                    id="symbols-counter"
+                                    style="color: #25d14b"
+                                    >0 / 250 characters</small
+                                >
+                            </div>
+                        </div>
+
+                        <div
+                            class="row mt-5 align-items-center justify-content-lg-between"
+                        >
+                            <div class="col-lg-3 col-12">
+                                <button
+                                    type="submit"
+                                    class="btn btn-lg btn-outline-success text-nowrap"
+                                >
+                                    Send email
+                                </button>
+                            </div>
+                            <div class="col-lg-9 col-12 mt-lg-0 mt-3">
+                                <small
+                                    >Or you can also write me directly to my
+                                    email -
+                                    <span style="color: #25d14b"
+                                        >roman.ivanov.dev@gmail.com</span
+                                    ></small
+                                >
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="container-fluid bg-dark p-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row text-white">
+                            <div class="col-lg-2 col-md-6 col-12">
+                                <h5>> Navigation</h5>
+                                <div class="d-flex flex-column">
+                                    <a
+                                        class="link-light text-decoration-none"
+                                        href="#"
+                                        >To the top</a
+                                    >
+
+                                    <a
+                                        class="link-light text-decoration-none"
+                                        href="#about-me-section"
+                                        >About me</a
+                                    >
+
+                                    <a
+                                        class="link-light text-decoration-none"
+                                        href="#skills-section"
+                                        >My skills</a
+                                    >
+
+                                    <a
+                                        class="link-light text-decoration-none"
+                                        href="#projects-section"
+                                        >My works</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-12 mt-md-0 mt-5">
+                                <h5>> External links</h5>
+                                <div class="d-flex flex-column">
+                                    <a
+                                        class="link-light text-decoration-none"
+                                        target="_blank"
+                                        href="https://justenough1.github.io/"
+                                        >Portfolio</a
+                                    >
+
+                                    <a
+                                        class="link-light text-decoration-none"
+                                        target="_blank"
+                                        href="https://github.com/JustEnough1"
+                                        >GitHub</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <h6 class="text-secondary">2023 | Roman Ivanov</h6>
+                            <p class="text-secondary">
+                                roman.ivanov.dev@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <script src="./js/bootstrap.min.js"></script>
         <script src="./js/main.js"></script>

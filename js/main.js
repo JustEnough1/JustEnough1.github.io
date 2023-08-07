@@ -42,4 +42,27 @@ const setupSkillsSection = () => {
     });
 };
 
+// Updates the characters count and color based on user input in a feedback textarea.
+const updateFeedbackCharacterCount = () => {
+    const textarea = document.getElementById("contact-textarea");
+    const symbolCounter = document.getElementById("symbols-counter");
+
+    textarea.addEventListener("input", () => {
+        const currentLength = textarea.value.length;
+        const maxLimit = 250;
+
+        let symbolCounterText = symbolCounter.innerText
+            .split(" ")
+            .slice(1)
+            .join(" ");
+        let newCount = `${currentLength} ${symbolCounterText}`;
+
+        symbolCounter.innerText = newCount;
+
+        symbolCounter.style.color =
+            currentLength === maxLimit ? "#f85a5a" : "#25d14b";
+    });
+};
+
 setupSkillsSection();
+updateFeedbackCharacterCount();
