@@ -11,7 +11,7 @@ const setupSkillsSection = () => {
     skillsButtons.addEventListener("click", (event) => {
         if (event.target.tagName === "A") {
             const clickedButton = event.target;
-            const selectedSkill = clickedButton.textContent.trim();
+            const selectedSkill = clickedButton.id;
 
             const skillBlocks = [
                 programmingLanguagesSkills,
@@ -28,13 +28,13 @@ const setupSkillsSection = () => {
             );
 
             switch (selectedSkill) {
-                case "Programming Languages":
+                case "programming-languages-btn":
                     programmingLanguagesSkills.classList.remove("skill-blur");
                     break;
-                case "Technologies":
+                case "technologies-btn":
                     technologiesSkills.classList.remove("skill-blur");
                     break;
-                case "Software":
+                case "software-btn":
                     softwareSkills.classList.remove("skill-blur");
                     break;
             }
