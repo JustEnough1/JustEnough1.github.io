@@ -34,6 +34,13 @@ small {
     font-size: 0.8125rem;
 }
 
+section:not(.hero-section)::before {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 70px;
+}
+
 .header {
     background-color: #fff;
     min-height: 70px;
