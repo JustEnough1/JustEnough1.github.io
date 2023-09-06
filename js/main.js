@@ -1,43 +1,25 @@
 // Sets up the interactive behavior for the skills section.
 const setupSkillsSection = () => {
-    const programmingLanguagesSkills = document.getElementById(
-        "programming-languages"
-    );
-    const technologiesSkills = document.getElementById("technologies");
-    const softwareSkills = document.getElementById("software");
-
     const skillsButtons = document.getElementById("skills-buttons");
 
     skillsButtons.addEventListener("click", (event) => {
+        event.preventDefault();
         if (event.target.tagName === "A") {
             const clickedButton = event.target;
-            const selectedSkill = clickedButton.id;
+            const target = document.getElementById(
+                clickedButton.getAttribute("data-target")
+            );
 
-            const skillBlocks = [
-                programmingLanguagesSkills,
-                technologiesSkills,
-                softwareSkills,
-            ];
             const buttonsArray = Array.from(skillsButtons.children);
 
             buttonsArray.forEach((btn) => btn.classList.remove("clicked"));
             clickedButton.classList.add("clicked");
 
-            skillBlocks.forEach((skillBlock) =>
-                skillBlock.classList.add("skill-blur")
-            );
-
-            switch (selectedSkill) {
-                case "programming-languages-btn":
-                    programmingLanguagesSkills.classList.remove("skill-blur");
-                    break;
-                case "technologies-btn":
-                    technologiesSkills.classList.remove("skill-blur");
-                    break;
-                case "software-btn":
-                    softwareSkills.classList.remove("skill-blur");
-                    break;
-            }
+            target.scrollIntoView({
+                behavior: "smooth",
+                block: "nearest",
+                inline: "center",
+            });
         }
     });
 };

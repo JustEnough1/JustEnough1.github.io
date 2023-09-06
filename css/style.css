@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -58,24 +62,27 @@ section:not(.hero-section)::before {
 }
 
 .skills > div {
-    border-radius: 0.25rem;
-    padding: 2rem;
-    border: 1px solid #f1f1f1;
-    background: #fff;
     scroll-snap-align: start;
     transition: all 0.3s ease-out;
 }
 
 .skills .skill-level {
-    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    margin: 15px 0;
+    padding: 0.625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    align-self: stretch;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    background: #fff;
+    text-align: center;
+    min-height: 200px;
 }
 
 .skills h4 {
-    color: #115544;
+    font-weight: lighter;
     margin-bottom: 15px;
 }
 
@@ -108,6 +115,9 @@ section:not(.hero-section)::before {
 .skills-buttons {
     scrollbar-width: none;
     -ms-overflow-style: none;
+}
+.skills-buttons * {
+    cursor: pointer;
 }
 
 .skills-buttons::-webkit-scrollbar {

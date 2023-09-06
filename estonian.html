@@ -232,7 +232,7 @@
             </svg>
         </section>
 
-        <section id="about-me-section" class="py-5">
+        <section tabindex="0" id="about-me-section" class="py-5 pb-1">
             <div class="container position-relative overflow-hidden">
                 <h3 class="text-center typing-text">
                     > <span class="text-center heading-text">Minu teekond</span
@@ -240,6 +240,7 @@
                 </h3>
                 <div class="row mt-5 flex-nowrap overflow-scroll py-5">
                     <div
+                        tabindex="0"
                         class="col-lg-5 col-12 me-5 bg-white p-4 rounded shadow-sm timeline-card position-relative mb-5"
                     >
                         <h4 class="mb-4">2019: Teekonnale asumine</h4>
@@ -267,6 +268,7 @@
                     </div>
 
                     <div
+                        tabindex="0"
                         class="col-lg-5 col-12 me-5 bg-white p-4 rounded shadow-sm timeline-card position-relative mb-5"
                     >
                         <h4 class="mb-4">
@@ -293,6 +295,7 @@
                     </div>
 
                     <div
+                        tabindex="0"
                         class="col-lg-5 col-12 me-5 bg-white p-4 rounded shadow-sm timeline-card position-relative mb-5"
                     >
                         <h4 class="mb-4">
@@ -325,6 +328,7 @@
                         ></i>
                     </div>
                     <div
+                        tabindex="0"
                         class="col-lg-5 col-12 me-5 bg-white p-4 rounded shadow-sm timeline-card position-relative mb-5"
                     >
                         <h4 class="mb-4">
@@ -377,7 +381,7 @@
             </div>
         </section>
 
-        <section id="skills-section" class="py-5">
+        <section tabindex="0" id="skills-section" class="py-1">
             <div class="container" id="skillsSectionContent">
                 <h3 class="text-center typing-text">
                     > <span class="heading-text">Minu oskused</span
@@ -385,102 +389,157 @@
                 </h3>
                 <div
                     id="skills-buttons"
-                    class="row my-3 flex-nowrap overflow-scroll justify-content-md-center skills-buttons"
+                    class="row my-3 flex-wrap overflow-scroll justify-content-md-center skills-buttons"
                 >
                     <a
-                        class="col-lg-3 col-auto text-nowrap text-center text-dark border border-dark rounded p-2 text-decoration-none clicked"
-                        href="#programming-languages"
+                        href="javascript:void(0)"
+                        class="col-lg-3 col-12 text-nowrap text-center text-dark border border-dark rounded p-2 text-decoration-none clicked"
+                        data-target="programming-languages"
                         id="programming-languages-btn"
                         >Programmeerimiskeeled</a
                     >
                     <a
-                        class="mx-3 col-lg-3 col-auto text-nowrap text-center text-dark border border-dark rounded p-2 text-decoration-none"
-                        href="#technologies"
+                        href="javascript:void(0)"
+                        class="my-lg-0 mx-lg-3 my-3 col-lg-3 col-12 text-nowrap text-center text-dark border border-dark rounded p-2 text-decoration-none"
+                        data-target="technologies"
                         id="technologies-btn"
                         >Tehnoloogiad</a
                     >
 
                     <a
-                        class="col-lg-3 col-auto text-nowrap text-center text-dark border border-dark rounded p-2 text-decoration-none"
-                        href="#software"
+                        href="javascript:void(0)"
+                        class="col-lg-3 col-12 text-nowrap text-center text-dark border border-dark rounded p-2 text-decoration-none"
+                        data-target="software"
                         id="software-btn"
                         >Tarkvara</a
                     >
                 </div>
-
                 <div class="row">
                     <div
                         id="skills"
-                        class="skills overflow-hidden flex-nowrap d-flex justify-content-lg-between justify-content-start"
+                        class="skills overflow-hidden flex-nowrap d-flex justify-content-lg-between justify-content-start mt-5"
                     >
-                        <div class="col-lg-4 col-12" id="programming-languages">
-                            <h4>Programmeerimiskeeled</h4>
-                            <div class="d-flex flex-column">
-                                <div class="skill-level">
-                                    <h6 class="w-100">Spetsialist</h6>
-                                    <span class="skill">JavaScript</span>
-                                    <span class="skill">TypeScript</span>
-                                </div>
-                                <div class="skill-level">
-                                    <h6 class="w-100">Edasijõudnu</h6>
-                                    <span class="skill">Java</span>
-                                    <span class="skill">SQL</span>
-                                    <span class="skill">Python</span>
-                                </div>
-                                <div class="skill-level">
-                                    <h6 class="w-100">Kesktase</h6>
-                                    <span class="skill">C#</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="col-lg-4 col-12 skill-blur"
-                            id="technologies"
-                        >
-                            <h4>Tehnoloogiad</h4>
-                            <div class="d-flex flex-column">
-                                <div class="skill-level">
-                                    <h6 class="w-100">Spetsialist</h6>
-                                    <span class="skill">React.JS</span>
-                                    <span class="skill">Express.JS</span>
-                                    <span class="skill">Tailwind CSS</span>
-                                    <span class="skill">Bootstrap CSS</span>
-                                    <span class="skill">Wordpress</span>
-                                </div>
-                                <div class="skill-level">
-                                    <h6 class="w-100">Edasijõudnu</h6>
-                                    <span class="skill">Next.JS</span>
-                                    <span class="skill">Socket.IO</span>
-                                    <span class="skill">MySQL</span>
-                                </div>
-                                <div class="skill-level">
-                                    <h6 class="w-100">Kesktase</h6>
-                                    <span class="skill">Mongo DB</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-12 skill-blur" id="software">
-                            <h4>Tarkvara</h4>
-                            <div class="d-flex flex-column">
-                                <div class="skill-level">
-                                    <h6 class="w-100">Spetsialist</h6>
-                                    <span class="skill">Figma</span>
-                                    <span class="skill"
-                                        >Visual Studio Code</span
+                        <div class="col-12" id="programming-languages">
+                            <div
+                                class="d-flex flex-lg-row flex-column justify-content-center gap-3"
+                            >
+                                <div
+                                    class="skill-level col-lg-4 col-12 flex-grow-1 flex-shrink-1"
+                                >
+                                    <h4 class="w-100">Spetsialist</h4>
+                                    <div
+                                        class="d-flex flex-wrap justify-content-center gap-2"
                                     >
-                                    <span class="skill">PhpMyAdmin</span>
+                                        <span class="skill">JavaScript</span>
+                                        <span class="skill">TypeScript</span>
+                                    </div>
                                 </div>
-                                <div class="skill-level">
-                                    <h6 class="w-100">Edasijõudnu</h6>
-                                    <span class="skill">GitHub</span>
-                                    <span class="skill">Jira</span>
-                                    <span class="skill">NetBeans</span>
-                                    <span class="skill">Postman</span>
+                                <div
+                                    class="skill-level col-lg-4 col-12 flex-grow-1 flex-shrink-1"
+                                >
+                                    <h4 class="w-100">Edasijõudnu</h4>
+                                    <div
+                                        class="d-flex flex-wrap justify-content-center gap-2"
+                                    >
+                                        <span class="skill">Java</span>
+                                        <span class="skill">SQL</span>
+                                        <span class="skill">Python</span>
+                                    </div>
                                 </div>
-                                <div class="skill-level">
-                                    <h6 class="w-100">Kesktase</h6>
-                                    <span class="skill">AWS</span>
+                                <div
+                                    class="skill-level col-lg-4 col-12 flex-grow-1 flex-shrink-1"
+                                >
+                                    <h4 class="w-100">Kesktase</h4>
+                                    <div
+                                        class="d-flex flex-wrap justify-content-center gap-2"
+                                    >
+                                        <span class="skill">C#</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" id="technologies">
+                            <div
+                                class="d-flex flex-lg-row flex-column justify-content-center gap-3"
+                            >
+                                <div
+                                    class="skill-level col-lg-4 col-12 flex-grow-1 flex-shrink-1"
+                                >
+                                    <h4 class="w-100">Spetsialist</h4>
+                                    <div
+                                        class="d-flex flex-wrap justify-content-center gap-2"
+                                    >
+                                        <span class="skill">React.JS</span>
+                                        <span class="skill">Express.JS</span>
+                                        <span class="skill">Tailwind CSS</span>
+                                        <span class="skill">Bootstrap CSS</span>
+                                        <span class="skill">Wordpress</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="skill-level col-lg-4 col-12 flex-grow-1 flex-shrink-1"
+                                >
+                                    <h4 class="w-100">Edasijõudnu</h4>
+                                    <div
+                                        class="d-flex flex-wrap justify-content-center gap-2"
+                                    >
+                                        <span class="skill">Next.JS</span>
+                                        <span class="skill">Socket.IO</span>
+                                        <span class="skill">MySQL</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="skill-level col-lg-4 col-12 flex-grow-1 flex-shrink-1"
+                                >
+                                    <h4 class="w-100">Kesktase</h4>
+                                    <div
+                                        class="d-flex flex-wrap justify-content-center gap-2"
+                                    >
+                                        <span class="skill">Mongo DB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" id="software">
+                            <div
+                                class="d-flex flex-lg-row flex-column justify-content-center gap-3"
+                            >
+                                <div
+                                    class="skill-level col-lg-4 col-12 flex-grow-1 flex-shrink-1"
+                                >
+                                    <h4 class="w-100">Spetsialist</h4>
+                                    <div
+                                        class="d-flex flex-wrap justify-content-center gap-2"
+                                    >
+                                        <span class="skill">Figma</span>
+                                        <span class="skill"
+                                            >Visual Studio Code</span
+                                        >
+                                        <span class="skill">PhpMyAdmin</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="skill-level col-lg-4 col-12 flex-grow-1 flex-shrink-1"
+                                >
+                                    <h4 class="w-100">Edasijõudnu</h4>
+                                    <div
+                                        class="d-flex flex-wrap justify-content-center gap-2"
+                                    >
+                                        <span class="skill">GitHub</span>
+                                        <span class="skill">Jira</span>
+                                        <span class="skill">NetBeans</span>
+                                        <span class="skill">Postman</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="skill-level col-lg-4 col-12 flex-grow-1 flex-shrink-1"
+                                >
+                                    <h4 class="w-100">Kesktase</h4>
+                                    <div
+                                        class="d-flex flex-wrap justify-content-center gap-2"
+                                    >
+                                        <span class="skill">AWS</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
