@@ -111,7 +111,9 @@
                                 >
                                     <i class="bi bi-translate fs-4"></i>
                                 </button>
-                                <ul class="dropdown-menu dropdown-menu-dark">
+                                <ul
+                                    class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
+                                >
                                     <li>
                                         <a
                                             class="dropdown-item"
@@ -242,151 +244,363 @@
                     > <span class="text-center heading-text">Мой путь</span
                     ><span class="blink-text">_</span>
                 </h3>
-                <div class="row mt-5 flex-nowrap overflow-scroll py-5">
+
+                <div class="row flex-nowrap overflow-x-scroll">
                     <div
-                        tabindex="0"
-                        class="col-lg-5 col-12 me-5 bg-white p-4 rounded shadow-sm timeline-card position-relative mb-5"
+                        id="carouselExampleDark"
+                        class="carousel carousel-dark slide w-100"
+                        data-bs-interval="false"
+                        data-bs-touch="true"
+                        data-bs-ride="carousel"
                     >
-                        <h4 class="mb-4">2019: Отправляясь в путешествие</h4>
-
-                        <p>
-                            <b>Изучение мира программирования:</b>
-                            Я начал проявлять неподдельный интерес к
-                            программированию и погрузился в захватывающий мир
-                            кодинга в качестве хобби.
-                        </p>
-                        <p>
-                            <b>Самообучение для развлечения:</b> Я хотел понять
-                            основы языков программирования из чистого
-                            любопытства и энтузиазм.
-                        </p>
-                        <p>
-                            <b>Выбор пути:</b> после окончания школы сделал
-                            решительный выбор в пользу карьеры разработчика
-                            программированию обеспечения, поступив в центр
-                            профессионального образования для формализации и
-                            углубления своих навыков программирования.
-                        </p>
-
-                        <i
-                            class="bi bi-check-circle-fill position-absolute top-0 start-100 translate-middle h1 text-success"
-                        ></i>
-                    </div>
-
-                    <div
-                        tabindex="0"
-                        class="col-lg-5 col-12 me-5 bg-white p-4 rounded shadow-sm timeline-card position-relative mb-5"
-                    >
-                        <h4 class="mb-4">2020–2021: Расширяя горизонты</h4>
-
-                        <p>
-                            <b>Изучение языков:</b> Я погрузился в мир языков
-                            программирования, овладев языками Python и Java.
-                            Также познакомился с веб разработкой и ее
-                            технологиями , такие как HTML, CSS и Bootstrap.
-                        </p>
-                        <p>
-                            <b>Растущая уверенность:</b> к концу 2021 года Я
-                            стал чувствовать себя увереннее в своих способностях
-                            программирования, что подтверждает то, что решение
-                            начать карьеру в качестве разработчика программного
-                            обеспечения было верным.
-                        </p>
-                        <i
-                            class="bi bi-check-circle-fill position-absolute top-0 start-100 translate-middle h1 text-success"
-                        ></i>
-                    </div>
-
-                    <div
-                        tabindex="0"
-                        class="col-lg-5 col-12 me-5 bg-white p-4 rounded shadow-sm timeline-card position-relative mb-5"
-                    >
-                        <h4 class="mb-4">
-                            2022: Расширение навыков и получение опыта
-                        </h4>
-
-                        <p>
-                            <b>Освоение веб-технологий:</b> получил более
-                            углубленный опыт работы с веб-технологиями, включая
-                            JavaScript для динамических и интерактивных
-                            веб-приложений, Socket.IO для связи в реальном
-                            времени и Selenium для автоматизированного
-                            тестирования.
-                        </p>
-                        <p>
-                            <b>Погружение в базы данных:</b> расширил знания в
-                            области управления базами данных с практическим
-                            опытом работы с MS SQL и MySQL, что позволяет
-                            эффективно хранить и извлекать данные в моих
-                            веб-приложениях.
-                        </p>
-                        <p>
-                            <b>Успешная стажировка:</b> получил возможность
-                            пройти 4-месячную стажировку в Sillamäe Sadam AS,
-                            внося свой вклад в различные аспекты разработки их
-                            веб-сайта.
-                        </p>
-                        <i
-                            class="bi bi-check-circle-fill position-absolute top-0 start-100 translate-middle h1 text-success"
-                        ></i>
-                    </div>
-                    <div
-                        tabindex="0"
-                        class="col-lg-5 col-12 me-5 bg-white p-4 rounded shadow-sm timeline-card position-relative mb-5"
-                    >
-                        <h4 class="mb-4">
-                            Настояшее время: развитие навыков и влияние на
-                            реальный мир
-                        </h4>
-
-                        <p>
-                            <b>Неотъемлемая роль в стажировке:</b> во время
-                            6-месячной стажировки я сыграл решающую роль в
-                            разработке, тестировании и доработке веб-сайта,
-                            активно работая как над его функциональностью, так и
-                            над дизайном. Мои усилия в составе команды
-                            подчеркивают мою адаптивность и навыки
-                            сотрудничества.
-                        </p>
-                        <p>
-                            <b>Успех дипломного проекта:</b> успешно защитил
-                            диплом впечатляющим выпускным проектом который
-                            продемонстрировал сочетание различных технологий,
-                            часть которых была выучена самостоятельно. Этот
-                            проект продемонстрировал способность эффективно
-                            применять мои навыки в сценарии реального мира.
-                        </p>
-                        <p>
-                            <b
-                                >Окончание профессионально-технического
-                                училища:</b
+                        <div class="carousel-indicators">
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleDark"
+                                data-bs-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleDark"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleDark"
+                                data-bs-slide-to="2"
+                                aria-label="Slide 3"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleDark"
+                                data-bs-slide-to="3"
+                                aria-label="Slide 4"
+                            ></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div
+                                class="carousel-item active"
+                                data-bs-interval="900000"
                             >
-                            Окончание профессионально-технического училища стало
-                            важной вехой в моем стремлении к карьере в качестве
-                            разработчика программного обеспечения.
-                        </p>
-
-                        <i
-                            class="bi bi-check-circle position-absolute top-0 start-100 translate-middle h1 text-success"
-                        ></i>
+                                <div
+                                    tabindex="0"
+                                    class="col-12"
+                                    style="margin: 100px 0"
+                                >
+                                    <div class="text-lg-center pb-lg-5 pb-3">
+                                        <h4 class="fw-lighter text-success">
+                                            2019
+                                        </h4>
+                                        <h1 class="fw-light">
+                                            Отправляясь в путешествие
+                                        </h1>
+                                    </div>
+                                    <div>
+                                        <div
+                                            class="d-flex pt-lg-5 pt-3 row justify-content-center gap-lg-0 gap-3"
+                                        >
+                                            <div class="col-lg-3 col-12">
+                                                <h5>
+                                                    <b>
+                                                        Изучение мира
+                                                        программирования</b
+                                                    >
+                                                </h5>
+                                                <p>
+                                                    В 2019 Я начал проявлять
+                                                    неподдельный интерес к
+                                                    программированию и
+                                                    погрузился в захватывающий
+                                                    мир кодинга в качестве
+                                                    хобби.
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="col-lg-3 col-12 mx-lg-5"
+                                            >
+                                                <h5>
+                                                    <b
+                                                        >Самообучение для
+                                                        развлечения</b
+                                                    >
+                                                </h5>
+                                                <p>
+                                                    Я хотел понять основы языков
+                                                    программирования из чистого
+                                                    любопытства и энтузиазма.
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-3 col-12">
+                                                <h5>
+                                                    <b>Выбор пути</b>
+                                                </h5>
+                                                <p>
+                                                    После окончания школы я
+                                                    сделал решительный выбор в
+                                                    пользу карьеры разработчика
+                                                    ПО, поступив в центр
+                                                    профессионального
+                                                    образования для формализации
+                                                    и углубления своих навыков
+                                                    программирования.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="carousel-item"
+                                data-bs-interval="900000"
+                            >
+                                <div
+                                    tabindex="0"
+                                    class="col-12"
+                                    style="margin: 100px 0"
+                                >
+                                    <div class="text-lg-center pb-lg-5 pb-3">
+                                        <h4 class="fw-lighter text-success">
+                                            2020 - 2021
+                                        </h4>
+                                        <h1 class="fw-light">
+                                            Расширяя горизонты
+                                        </h1>
+                                    </div>
+                                    <div>
+                                        <div
+                                            class="d-flex pt-lg-5 pt-3 row justify-content-center gap-lg-0 gap-3"
+                                        >
+                                            <div class="col-lg-3 col-12">
+                                                <h5>
+                                                    <b>Изучение языковs</b>
+                                                </h5>
+                                                <p>
+                                                    Я погрузился в мир языков
+                                                    программирования, овладев
+                                                    языками Python и Java. Также
+                                                    познакомился с веб
+                                                    разработкой и такими
+                                                    технологиями как HTML, CSS и
+                                                    Bootstrap.
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="col-lg-3 col-12 mx-lg-5"
+                                            >
+                                                <h5>
+                                                    <b>Растущая уверенность</b>
+                                                </h5>
+                                                <p>
+                                                    К концу 2021 года Я стал
+                                                    чувствовать себя увереннее в
+                                                    своих способностях
+                                                    программирования, что
+                                                    подтверждает то, что решение
+                                                    стать разработчиком ПО было
+                                                    верным.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="carousel-item"
+                                data-bs-interval="900000"
+                            >
+                                <div
+                                    tabindex="0"
+                                    class="col-12"
+                                    style="margin: 100px 0"
+                                >
+                                    <div class="text-lg-center pb-lg-5 pb-3">
+                                        <h4 class="fw-lighter text-success">
+                                            2022
+                                        </h4>
+                                        <h1 class="fw-light">
+                                            Расширение навыков и получение опыта
+                                        </h1>
+                                    </div>
+                                    <div>
+                                        <div
+                                            class="d-flex pt-lg-5 pt-3 row justify-content-center gap-lg-0 gap-3"
+                                        >
+                                            <div class="col-lg-3 col-12">
+                                                <h5>
+                                                    <b
+                                                        >Освоение
+                                                        веб-технологий</b
+                                                    >
+                                                </h5>
+                                                <p>
+                                                    Я получил более углубленный
+                                                    опыт работы с
+                                                    веб-технологиями, включая
+                                                    JavaScript для динамических
+                                                    и интерактивных
+                                                    веб-приложений, Socket.IO
+                                                    для связи в реальном времени
+                                                    и Selenium для
+                                                    автоматизированного
+                                                    тестирования.
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="col-lg-3 col-12 mx-lg-5"
+                                            >
+                                                <h5>
+                                                    <b
+                                                        >Погружение в базы
+                                                        данных</b
+                                                    >
+                                                </h5>
+                                                <p>
+                                                    Расширил знания в области
+                                                    управления базами данных с
+                                                    практическим опытом работы с
+                                                    MS SQL и MySQL, что
+                                                    позволяет эффективно хранить
+                                                    и извлекать данные в моих
+                                                    веб-приложениях.
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-3 col-12">
+                                                <h5>
+                                                    <b>Успешная стажировка</b>
+                                                </h5>
+                                                <p>
+                                                    Я получил возможность пройти
+                                                    4-месячную стажировку в
+                                                    Sillamäe Sadam AS, внося
+                                                    свой вклад в различные
+                                                    аспекты разработки их
+                                                    веб-сайта.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="carousel-item"
+                                data-bs-interval="900000"
+                            >
+                                <div
+                                    tabindex="0"
+                                    class="col-12"
+                                    style="margin: 100px 0"
+                                >
+                                    <div class="text-lg-center pb-lg-5 pb-3">
+                                        <h4 class="fw-lighter text-success">
+                                            Настоящее время
+                                        </h4>
+                                        <h1 class="fw-light w-75 text-center">
+                                            Развитие навыков и влияние на
+                                            реальный мир
+                                        </h1>
+                                    </div>
+                                    <div>
+                                        <div
+                                            class="d-flex pt-lg-5 pt-3 row justify-content-center gap-lg-0 gap-3"
+                                        >
+                                            <div class="col-lg-3 col-12">
+                                                <h5>
+                                                    <b
+                                                        >Неотъемлемая роль в
+                                                        стажировке</b
+                                                    >
+                                                </h5>
+                                                <p>
+                                                    Во время 6-месячной
+                                                    стажировки Я сыграл решающую
+                                                    роль в разработке,
+                                                    тестировании и доработке
+                                                    веб-сайта, активно работая
+                                                    как над его
+                                                    функциональностью, так и над
+                                                    дизайном. Мои усилия в
+                                                    составе команды подчеркивают
+                                                    мою адаптивность и навыки
+                                                    сотрудничества.
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="col-lg-3 col-12 mx-lg-5"
+                                            >
+                                                <h5>
+                                                    <b
+                                                        >Успех дипломного
+                                                        проекта</b
+                                                    >
+                                                </h5>
+                                                <p>
+                                                    Успешно защитил диплом
+                                                    впечатляющим выпускным
+                                                    проектом который
+                                                    продемонстрировал сочетание
+                                                    различных технологий, часть
+                                                    которых была выучена
+                                                    самостоятельно. Этот проект
+                                                    продемонстрировал
+                                                    способность эффективно
+                                                    применять мои навыки в
+                                                    сценарии реального мира.
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-3 col-12">
+                                                <h5>
+                                                    <b
+                                                        >Окончание
+                                                        профессионально-технического
+                                                        училища</b
+                                                    >
+                                                </h5>
+                                                <p>
+                                                    Окончание
+                                                    профессионально-технического
+                                                    училища стало важной вехой в
+                                                    моем стремлении к карьере в
+                                                    качестве разработчика
+                                                    программного обеспечения.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev d-lg-block d-none"
+                            type="button"
+                            style="width: fit-content"
+                            data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev"
+                        >
+                            <span
+                                class="carousel-control-prev-icon"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next d-lg-block d-none"
+                            style="width: fit-content"
+                            type="button"
+                            data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next"
+                        >
+                            <span
+                                class="carousel-control-next-icon"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
-                <svg
-                    width="926"
-                    height="100%"
-                    viewBox="0 0 926 775"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="position-absolute top-50 start-100 translate-middle z-n1"
-                >
-                    <path
-                        opacity="0.1"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M925.305 325.661C917.15 439.82 802.995 511.017 715.325 590.434C630.205 667.541 550.835 757.457 433.495 771.172C303.19 786.402 159.642 757.183 71.5785 665.675C-13.9509 576.8 -2.07521 445.303 4.75493 325.661C11.087 214.742 10.5884 82.6337 108.424 20.2622C202.146 -39.4875 320.233 51.8888 433.495 52.3317C545.735 52.7706 659.269 -30.8946 755.872 22.7939C864.49 83.1596 933.755 207.365 925.305 325.661Z"
-                        fill="#4CDE6C"
-                    />
-                </svg>
             </div>
         </section>
 
