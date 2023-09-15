@@ -126,7 +126,7 @@ section:not(.hero-section)::before {
 }
 
 .skills-buttons > a.clicked {
-    background-color: green;
+    background-color: rgb(25, 135, 84);
     color: #fff !important;
     border: 0 !important;
 }
