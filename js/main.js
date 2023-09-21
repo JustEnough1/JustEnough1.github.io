@@ -109,14 +109,14 @@ class ArticleModal {
         const path = window.location.pathname;
         const page = path.split("/").pop();
         switch (page) {
-            case "index.html":
-                this.language = "ENG";
-                break;
             case "russian.html":
                 this.language = "RUS";
                 break;
             case "estonian.html":
                 this.language = "EST";
+                break;
+            default:
+                this.language = "ENG";
                 break;
         }
     }
