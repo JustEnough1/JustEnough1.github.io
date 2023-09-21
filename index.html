@@ -48,6 +48,55 @@
         />
     </head>
     <body>
+        <div
+            class="modal fade"
+            id="article-modal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-1" id="article-title"></h1>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div
+                        class="modal-body row justify-content-lg-between overflow-x-hidden gap-lg-0 gap-5"
+                    >
+                        <div
+                            class="col-lg-6 col-12 order-lg-1 order-2 overflow-y-scroll"
+                            id="article-text"
+                            style="height: 60vh"
+                        ></div>
+                        <div
+                            class="col-lg-5 col-12 order-lg-2 order-1 d-flex flex-column align-items-center justify-content-center"
+                            id="article-info"
+                        >
+                            <img
+                                id="article-image"
+                                alt=""
+                                class="w-50 rounded-circle"
+                                style="height: fit-content"
+                            />
+                            <div
+                                id="article-technologies"
+                                class="w-100 mt-3 d-flex flex-wrap gap-1 justify-content-center"
+                            ></div>
+                            <div
+                                id="article-links"
+                                class="w-100 mt-3 d-flex flex-lg-column flex-row gap-lg-1 gap-3 align-items-center justify-content-center"
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <nav class="navbar sticky-top navbar-expand-lg header">
             <div class="container">
                 <button
@@ -77,6 +126,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#projects-section"
                                 >My projects</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#articles-section"
+                                >Articles</a
                             >
                         </li>
                         <li class="nav-item">
@@ -927,6 +981,48 @@
             </div>
         </section>
 
+        <section id="articles-section" class="py-5">
+            <div class="container">
+                <h3 class="text-center typing-text">
+                    > <span class="heading-text">Articles</span
+                    ><span class="blink-text">_</span>
+                </h3>
+                <div class="row pt-5 gap-3 overflow-x-scroll flex-nowrap">
+                    <article
+                        class="col-lg-4 col-10 border bg-white rounded p-4 article-card"
+                    >
+                        <div class="d-flex flex-column h-100">
+                            <div class="mb-2">
+                                <time>
+                                    <small class="text-secondary"
+                                        >21 Sep 2023</small
+                                    ></time
+                                >
+                                <h4 class="fw-light text-truncate">
+                                    About my graduation project
+                                </h4>
+                            </div>
+                            <p
+                                class="flex-grow-1 text-secondary overflow-hidden"
+                            >
+                                In this article, I'll share the details of my
+                                graduation project with you.
+                            </p>
+                            <a
+                                class="mt-auto text-decoration-none"
+                                data-bs-toggle="modal"
+                                data-bs-target="#article-modal"
+                                onclick="openArticle(event)"
+                                data-open-article="about-brever"
+                                role="button"
+                                >Read more →</a
+                            >
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <section id="feedback-section" class="py-5">
             <div class="container my-5">
                 <div class="row justify-content-center">
@@ -1061,6 +1157,11 @@
                                         class="link-light text-decoration-none text-white-50"
                                         href="#projects-section"
                                         >My works</a
+                                    >
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="#articles-section"
+                                        >Articles</a
                                     >
                                     <a
                                         class="link-light text-decoration-none text-white-50"

@@ -131,6 +131,18 @@ section:not(.hero-section)::before {
     border: 0 !important;
 }
 
+.article-card {
+    height: 250px;
+    transition: all 0.2s ease-out;
+}
+.article-card:hover {
+    background-color: #212529 !important;
+}
+.article-card:hover h4,
+.article-card:hover a {
+    color: #f2f2f2;
+}
+
 #feedback-section *::placeholder {
     color: gray;
     opacity: 1;

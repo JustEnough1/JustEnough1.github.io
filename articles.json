@@ -1,0 +1,102 @@
+{
+    "articles": [
+      {
+        "id": "about-brever",
+        "image": "./images/brever-logo.svg",
+        "technologies": ["TypeScript", "Socket.IO", "React.JS", "MySQL", "Express.JS"],
+        "links": [{"url": "https://github.com/JustEnough1/Brever", "name": "GitHub"}],
+        "content": {
+          "ENG": {
+            "title": "About my graduation project",
+            "body": [
+              "<i class=\"text-secondary\">In this article, I would like to write more about my graduation project and share details related to the goals of this application, as well as the difficulties that may arise during development.</i>",
+              
+              "<h4 class=\"mt-5\">Main goal of the project</h4>",
+              "<p>The main goal of my graduation project was clear: to develop a web application for real-time messaging. This project became a real test for me as a specialist, because in addition to working with various technologies, including TypeScript, React.js, Express.js, Socket.io and MySQL, I had to work on documentation, organizing teamwork and other aspects of a developer's work.</p> ",
+              
+              "<h4 class=\"mt-5\">Choosing a project theme</h4>",
+              "<p>My decision to choose this project topic was driven by my desire to learn about websockets and TypeScript. I saw this as an opportunity to delve deeper into these technologies and apply them to a real-world scenario.</p> ",
+              
+              "<h4 class=\"mt-5\">Collaboration and teamwork</h4>",
+              "<p>I wasn't the only one working on the application. There was 1 more person on the team who was mainly involved in application design and documentation. I took over development leadership. It was a valuable experience working together as a team, even if it was a small team of two.</p> ",
+              
+              "<h4 class=\"mt-5\">Definition of the task</h4>",
+              "<p>The task of the project was quite simple and understandable. The goal was to create a user-friendly web messaging application that would allow people to chat in real time.</p> ",
+              "<p>Sounds simple, doesn't it? However, this task included many other subtasks - user authentication, registration, password management, profile setup, friend list management and, of course, real-time chat capabilities.</p>",
+
+              "<h4 class=\"mt-5\">Overcoming obstacles</h4>",
+              "<p>One of the biggest challenges I faced while working on the project was the lack of time. I had a relatively short period of time to complete the project - 2 months, including planning, creating the application design and documentation. The task was made more difficult by the fact that I had very little knowledge of websockets and TypeScript.</p> ",
+              "<p>Jira and a responsible attitude to the work helped us solve the problems of organizing work. Thus, We were able to continue working and bring our project to completion.</p> ",
+              
+              "<h4 class=\"mt-5\">Development results</h4>",
+              "<p>As a result, the goal was achieved. All the features have been added including user authentication, profile setup, friends list management and most importantly the live chat feature. We made the application functional and user-friendly.</p> ",
+              
+              "<h4 class=\"mt-5\">Conclusion</h4>",
+              "<p>During development, I honed my time management skills, dealt with the challenges of leading a small team, and gained proficiency in technologies such as TypeScript and Socket.IO.</p> ",
+              "<p>In conclusion, I want to say that this application was not just the culmination of my training in vocational school, but also a stepping stone towards my career as a developer. It taught me the importance of persistence, adaptability, and the joy of bringing a creative idea to life through code.</p> "
+            ]
+          },
+          "EST": {
+            "title": "Minu lõputööst",
+            "body": [
+              "<i class=\"text-secondary\">Selles artiklis tahaksin kirjutada lähemalt oma lõputööst ja jagada üksikasju, mis on seotud selle rakenduse eesmärkidega, samuti raskustega, mis võivad tekkida arenduse käigus.</i>",
+              
+              "<h4 class=\"mt-5\">Projekti peamine eesmärk</h4>",
+              "<p>Minu lõputöö põhieesmärk oli selge: arendada veebirakendust reaalajas sõnumite saatmiseks. Sellest projektist sai minu kui spetsialisti jaoks tõeline proovikivi, sest lisaks erinevate tehnoloogiatega, sealhulgas TypeScript, React.js, Express.js, Socket.io ja MySQL tööle, tuli mul tegeleda dokumentatsiooni, meeskonnatöö korraldamise ja muude aspektidega arendaja tööst.</p> ",
+              
+              "<h4 class=\"mt-5\">Projekti teema valimine</h4>",
+               "<p>Minu otsus see projektiteema valida tulenes minu soovist õppida tundma veebipistikupesasid ja TypeScripti. Nägin selles võimalust süveneda nendesse tehnoloogiatesse ja rakendada neid reaalses maailmas.</p> " ,
+              
+              "<h4 class=\"mt-5\">Koostöö ja meeskonnatöö</h4>",
+              "<p>Ma ei olnud ainus, kes rakenduse kallal töötas. Meeskonnas oli veel 1 inimene, kes tegeles peamiselt rakenduste kujundamise ja dokumenteerimisega. Võtsin arendusjuhtimise üle. See oli väärtuslik kogemus meeskonnana koos töötades , isegi kui tegemist oli väikese kaheliikmelise meeskonnaga.</p> ",
+            
+              "<h4 class=\"mt-5\">Ülesande määratlus</h4>",
+              "<p>Projekti ülesanne oli üsna lihtne ja arusaadav. Eesmärk oli luua kasutajasõbralik veebisõnumirakendus, mis võimaldaks inimestel reaalajas vestelda.</p> ",
+              "<p>Kõlab lihtsalt, kas pole? See ülesanne sisaldas aga palju muid alamülesandeid – kasutaja autentimine, registreerimine, paroolihaldus, profiili seadistamine, sõbraloendi haldamine ja loomulikult reaalajas vestlusvõimalused.</p> ",
+
+              "<h4 class=\"mt-5\">Takistuste ületamine</h4>",
+              "<p>Üks suurimaid väljakutseid, millega projekti kallal töötades kokku puutusin, oli ajapuudus. Mul oli projekti lõpuleviimiseks suhteliselt lühike aeg – 2 kuud, sealhulgas planeerimine, rakenduse kujunduse ja dokumentatsiooni koostamine. Ülesanne selle muutis keerulisemaks asjaolu, et teadsin väga vähe veebipesadest ja TypeScriptist.</p> ",
+              "<p>Jira ja vastutustundlik suhtumine töösse aitasid meil lahendada töökorraldusega seotud probleeme. Nii saime tööd jätkata ja oma projekti lõpuni viia.</p> ",
+            
+              "<h4 class=\"mt-5\">Arendustulemused</h4>",
+              "<p>Selle tulemusena sai eesmärk täidetud. Lisatud on kõik funktsioonid, sealhulgas kasutaja autentimine, profiili seadistamine, sõbraloendite haldamine ja mis kõige tähtsam - reaalajas vestluse funktsioon. Muutsime rakenduse funktsionaalseks ja kasutajasõbralikuks.</p > ",
+            
+              "<h4 class=\"mt-5\">Järeldus</h4>",
+              "<p>Arenduse käigus lihvisin oma ajaplaneerimise oskusi, tegelesin väikese meeskonna juhtimise väljakutsetega ja omandasin oskused sellistes tehnoloogiates nagu TypeScript ja Socket.IO.</p> ",
+              "<p>Kokkuvõtteks tahan öelda, et see rakendus ei olnud ainult minu kutsekoolis õppimise kulminatsioon, vaid ka hüppelaud minu arendajakarjääri suunas. See õpetas mulle püsivuse, kohanemisvõime ja rõõm loomingulise idee ellu viimisest koodi kaudu.</p> "]
+          },
+          "RUS": {
+            "title": "Про мой выпускной проект",
+            "body": [
+                "<i class=\"text-secondary\">В этой статье Я хотел бы написать подробнее про мой выпускной проект и поделится деталями, связанными с целями этого приложения, а также со сложностями, которые могут возникнуть во время разработки.</i>",
+                
+                "<h4 class=\"mt-5\">Основная цель проекта</h4>",
+                "<p>Основная цель моего дипломного проекта была ясна: разработать веб-приложение для обмена сообщениями в реальном времени. Этот проект стал для меня настоящей проверкой меня как специалиста, так как по мимо работы с различными технологиями, включая TypeScript, React.js, Express.js, Socket.io и MySQL, пришлось потрудится над документацией, организацией работы в команде и другими аспектами работы разработчика.</p> ",
+                
+                "<h4 class=\"mt-5\">Выбор темы проекта</h4>",
+                "<p>Мое решение выбрать данную тему проекта было вызвано моим желанием узнать о веб-сокетах и TypeScript. Я увидел в этом возможность глубже изучить эти технологии и применить их к сценарию из реального мира.</p> ",
+                
+                "<h4 class=\"mt-5\">Сотрудничество и командная работа</h4>",
+                "<p>Я был не единственным кто работал над приложением. В команде был еще 1 человек, который в основном занимался дизайном приложения и документацией. Я взял на себя руководство разработкой.Это был ценный опыт совместной работы в команде, даже если это была небольшая команда из двух человек.</p> ",
+                
+                "<h4 class=\"mt-5\">Определение задачи</h4>",
+                "<p>Задача проекта  была достаточно простой и понятной. Она заключалась в создании удобного веб-приложения для обмена сообщениями, которое позволило бы людям переписываться в режиме реального времени. </p> ",
+                "<p>Звучит просто, не так ли? Однако эта задача включала в себя множество других подзадач - аутентификация пользователей, регистрация, управление паролями, настройка профиля, управление списком друзей и, конечно же, возможности чата в реальном времени.</p> ",
+
+                "<h4 class=\"mt-5\">Преодоление препятствий</h4>",
+                "<p>Одной из наиболее серьезных проблем, с которыми я столкнулся во время работы над проектом была нехватка времени. На выполнение проекта у меня был сравнительно небольшой срок — 2 месяца, включая проектирование, создание дизайна и документация. Задача усложнялась тем, что я был очень мало знаком с веб-сокетами и TypeScript.</p> ",
+                "<p>Решить проблемы организации работы нам помогли Jira и ответственное отношение к выполняемой работе. Таким образом Мы смогли продолжать работу и довести свой проект до конца. </p> ",
+                
+                "<h4 class=\"mt-5\">Результаты разработки</h4>",
+                "<p>В итоге цель была выполнена. Были добавлены все функции, включая аутентификацию пользователей, настройку профиля, управление списком друзей и, что наиболее важно, функцию чата в реальном времени. Мы сделали приложение функциональным и удобным для пользователя.</p> ",
+                
+                "<h4 class=\"mt-5\">Заключение</h4>",
+                "<p>За время разработки я отточил свои навыки тайм-менеджмента, справился с трудностями руководства небольшой командой и приобрел навыки работы с такими технологиями, как TypeScript и Socket.IO.</p> ",
+                "<p>В заключение хочу сказать, что это приложение стало не просто кульминацией моего обучения в ПТУ, но и ступенькой на пути к моей карьере разработчика. Это научило меня важности настойчивости, способности к адаптации и радости воплощения творческой идеи в жизнь с помощью кода.</p> "
+              ]
+          }
+        }
+      }
+    ]
+  }
+  
