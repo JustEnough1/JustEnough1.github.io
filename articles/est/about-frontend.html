@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="et">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+        />
+        <title>
+            Roman Ivanov | Asjad, mida tuleb õppida, et pääseda front-end
+            arendusse
+        </title>
+
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+        <meta
+            name="description"
+            content="Uurige minu teekonda. Võtke minuga ühendust, et teha koostööd ja teha uuendusi tarkvaraarenduse maailmas."
+        />
+
+        <meta
+            name="keywords"
+            content="veebiarendus, esirinne tehnoloogiad, HTML, CSS, JavaScript, veebiarendaja, esirinne arendaja, veebiarenduse tööriistad, veebirakendused, veebiarenduse põhitõed, HTML märgendid, Eesti, JavaScript programmeerimine, veebiarenduse oskused"
+        />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://justenough1.github.io/" />
+        <meta property="og:title" content="Roman Ivanov | Veebiarendaja" />
+        <meta
+            property="og:description"
+            content="Uurige minu teekonda. Võtke minuga ühendust, et teha koostööd ja teha uuendusi tarkvaraarenduse maailmas."
+        />
+        <meta property="og:image" content="./images/portfolio-logo.svg" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://justenough1.github.io/" />
+        <meta property="twitter:title" content="Roman Ivanov | Veebiarendaja" />
+        <meta
+            property="twitter:description"
+            content="Uurige minu teekonda. Võtke minuga ühendust, et teha koostööd ja teha uuendusi tarkvaraarenduse maailmas."
+        />
+        <meta property="twitter:image" content="./images/portfolio-logo.svg" />
+
+        <meta
+            name="google-site-verification"
+            content="MyFEEBpEnHld1lLWlNXh-d7MN9mDQ3buNlJlHbeBb4w"
+        />
+    </head>
+    <body>
+        <!-- Header -->
+        <nav class="navbar sticky-top navbar-expand-lg header">
+            <div class="container">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link ps-0"
+                                href="/estonian.html#about-me-section"
+                                >Minust</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="/estonian.html#skills-section"
+                                >Minu oskused</a
+                            >
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="/estonian.html#projects-section"
+                                >Projektid</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="/estonian.html#articles-section"
+                                >Artiklid</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="/estonian.html#feedback-section"
+                                >Võta minuga ühendust</a
+                            >
+                        </li>
+                    </ul>
+                    <ul
+                        class="navbar-nav mb-2 mb-lg-0 align-items-lg-center align-items-start"
+                    >
+                        <hr class="d-lg-none d-sm-block w-100" />
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="https://github.com/JustEnough1"
+                                target="_blank"
+                                >Minu GitHub</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="https://www.linkedin.com/in/roman-ivanov-a61816281/"
+                                target="_blank"
+                                >Minu LinkedIn</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button
+                                    class="btn dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <i class="bi bi-translate fs-4"></i>
+                                </button>
+                                <ul
+                                    class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
+                                >
+                                    <li>
+                                        <a
+                                            class="dropdown-item active"
+                                            href="../est/about-frontend.html"
+                                            >Eesti keeles</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="../eng/about-frontend.html"
+                                            >English</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="../rus/about-frontend.html"
+                                            >Русский язык</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Article -->
+        <article class="container py-5">
+            <!-- Article info -->
+            <div class="row justify-content-center">
+                <div
+                    class="col-lg-7 col-12 d-flex flex-column align-items-center justify-content-center"
+                >
+                    <!-- Image -->
+                    <img
+                        id="article-image"
+                        alt=""
+                        class="w-50 rounded-circle"
+                        style="height: fit-content"
+                        src="/images/about-frontend.svg"
+                    />
+
+                    <div
+                        id="article-header"
+                        class="w-100 d-flex flex-wrap gap-1 justify-content-center"
+                    >
+                        <!-- Title -->
+                        <h1 class="text-center my-5 w-100">
+                            Asjad, mida tuleb õppida, et pääseda front-end
+                            arendusse
+                        </h1>
+
+                        <!-- Tags -->
+                        <small class="rounded p-2 bg-success-subtle">
+                            Veebiarendus
+                        </small>
+                        <small class="rounded p-2 bg-success-subtle">
+                            front-end
+                        </small>
+                        <small class="rounded p-2 bg-success-subtle">
+                            HTML
+                        </small>
+                        <small class="rounded p-2 bg-success-subtle">
+                            CSS
+                        </small>
+                        <small class="rounded p-2 bg-success-subtle">
+                            JavaScript
+                        </small>
+                    </div>
+                    <div
+                        id="article-links"
+                        class="w-100 mt-3 d-flex flex-lg-column flex-row gap-lg-1 gap-3 align-items-center justify-content-center"
+                    ></div>
+                </div>
+            </div>
+            <!-- Article content -->
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-7 col-12">
+                    <i class="text-secondary"
+                        >Selles artiklis tahtsin rääkida veebiarendusest ja
+                        tööriistadest, mida kasutame kaunite veebisaitide ja
+                        veebirakenduste loomiseks.</i
+                    >
+
+                    <h4 class="mt-5">Arusaamine</h4>
+                    <p>
+                        Enne kui hakkad midagi õppima, küsi endalt, kas sa tead,
+                        mis on veebiarendus? Kui te ei tea:
+                    </p>
+                    <p>
+                        Veebiarendus on IT-tööstuses üks populaarsemaid
+                        valdkondi, mis on alati nõutud. Veebiarendajana on teie
+                        ülesanne pakkuda kvaliteetset koodi ilusate ja
+                        usaldusväärsete veebisaitide ja veebirakenduste
+                        loomiseks.
+                    </p>
+                    <p>
+                        Tavaliselt jagunevad veebiarendajad front-end (klient)
+                        ja back-end (server) arendajateks. Selles artiklis tahan
+                        lähemalt uurida esiotsa tehnoloogiaid.
+                    </p>
+
+                    <h4 class="mt-5">Sinu lähtepunkt</h4>
+                    <p>
+                        front-end, nagu me juba teame, tähendab kliendi poolt.
+                        Mida see täpsemalt tähendab? Seega on esiosa kõik, mida
+                        kasutaja näeb: lehed, sisendelemendid, nupud,
+                        animatsioonid ja muud kasutajaliidese elemendid.
+                    </p>
+                    <p>
+                        Niisiis, nende elementide ehitamiseks vajame mõningaid
+                        tööriistu. Põhimõtteliselt koosneb esiosa kolmest
+                        põhitehnoloogiast:
+                    </p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <p>
+                        Need tehnoloogiad on põhilised veebitehnoloogiad.
+                        Muidugi pole need ainsad, raamistikke on palju, kuid
+                        enne raamistike tundmaõppimist peaksime selle kolmikuga
+                        tutvuma.
+                    </p>
+
+                    <h4 class="mt-5">HTML</h4>
+                    <p>
+                        HTML on hüperteksti märgistuskeel. Ei saa aru, eks?
+                        Eelistan mõelda sellest kui keelest, mida kasutame
+                        tulevase veebisaidi luustiku määratlemiseks. See keel on
+                        üsna lihtne, nii et siit peaksite oma õppimise teekonda
+                        alustama. Vaatame koodi näidet.
+                    </p>
+                    <code
+                        ><h6
+                            class="text-end m-0 rounded-top border border-2 border-dark p-2"
+                        >
+                            index.html
+                        </h6>
+                        <pre class="bg-black p-4 rounded-bottom">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;!-- Your code here --&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre
+                        >
+                    </code>
+                    <p>
+                        Iga HTML-fail peaks korralikult töötamiseks järgima seda
+                        struktuuri.
+                    </p>
+                    <p>
+                        HTML-is kasutame asju, mida nimetatakse "märgenditeks",
+                        mis näevad välja nagu
+                        <code>&lt;tagname&gt;&lt;/tagname&gt;</code>. Erinevaid
+                        silte on tohutult palju ja tõenäoliselt ei tohiks te
+                        proovida neid kõiki korraga selgeks õppida, sest aja
+                        jooksul kasutate erinevaid silte ikka ja jälle ning
+                        jätate paljud neist meelde, kui nendega töötate.
+                        <a
+                            target="_blank"
+                            href="https://www.w3schools.com/tags/"
+                            >Siin on täielik nimekiri olemasolevatest
+                            HTML-märgenditest.</a
+                        >
+                    </p>
+                    <p>
+                        HTML-sildid peavad alati olema suletud. Silte on 2
+                        erinevat tüüpi – traditsioonilised ja isesulguvad
+                        sildid. Erinevus nende vahel seisneb selles, et kui
+                        isesulguvad sildid avatakse ja suletakse ühe sildi sees
+                        (nt <code>&lt;img /&gt;</code>), peavad
+                        traditsioonilistel siltidel olema avatud ja sulgevad
+                        sildid (näide
+                        <code>&lt;body&gt;&lt;/body&gt;</code>
+                        ).
+                    </p>
+                    <p>
+                        Peaaegu igal HTML-i märgendil on nn atribuudid. Need on
+                        HTML-märgendi omadused, mis võivad muuta sildi välimust,
+                        käitumist ja juurdepääsetavust. Mõnda atribuuti saab
+                        kasutada erinevatel siltidel, näiteks atribuuti
+                        <code>style=""</code> , mida saame kasutada iga sildi
+                        puhul, et muuta selle välimust CSS-i abil. Aga iga
+                        atribuuti ei saa igas sildis kasutada, alati googelda,
+                        mis atribuudid konkreetsel sildis on.
+                    </p>
+
+                    <p>Nüüd vaatame ja selgitame oma näidet:</p>
+                    <ul>
+                        <li>
+                            <p>
+                                <code>&lt;!DOCTYPE html&gt;</code> ütleb
+                                brauserile, et see on meie dokumenditüüp. See
+                                näide täpsustab, et dokumendi tüüp on HTML 5,
+                                HTML-i uusim versioon.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <code>&lt;html&gt;&lt;/html&gt;</code> mängib
+                                meie HTML-elementide ümbrisena.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <code>&lt;head&gt;&lt;/head&gt;</code> on meie
+                                metaandmete, linkide ja skriptide kodu. Kasutame
+                                seda silti CSS- ja JavaScript-failide
+                                linkimiseks, et saaksime neid oma lehel
+                                kasutada. Metaandmed on andmed, mis esindavad
+                                teavet meie lehe kohta, nagu kodeering,
+                                märksõnad, kirjeldus või, nagu meie struktuuris,
+                                pealkiri. Kasutame pealkirja silti, et anda oma
+                                lehele nimi, mis kuvatakse teie brauseri
+                                vahekaardil.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <code>&lt;body&gt;&lt;/body&gt;</code> on koht,
+                                kus me kirjutame oma HTML-koodi.
+                            </p>
+                        </li>
+                    </ul>
+
+                    <h4 class="mt-5">CSS</h4>
+                    <p>
+                        Kasutame CSS-i (Cascading Style Sheets), et muuta meie
+                        HTML-elemendid kena välja. Selleks peate looma uue
+                        CSS-faili, linkima selle oma HTML-failiga ja alustama
+                        stiili kujundamist.
+                    </p>
+                    <p>
+                        CSS-faili linkimiseks peate kasutama HTML-failis
+                        märgendit <code>&lt;link/&gt;</code>. Nagu me juba
+                        teame, peaksime seda tegema märgendis
+                        <code>&lt;head&gt;</code>. Ärge unustage lisada
+                        märgendile <code>&lt;link/&gt;</code> atribuute
+                        <code>rel="stylesheet"</code> ja
+                        <code>href="/path/to/your/style.css"</code>!
+                    </p>
+                    <code>
+                        <h6
+                            class="text-end m-0 rounded-top border border-2 border-dark p-2"
+                        >
+                            index.html
+                        </h6>
+                        <pre class="bg-black p-4 rounded-bottom">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+        &lt;link rel="stylesheet" href="/path/to/your/style.css" /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;!-- Your code here --&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre
+                        >
+                    </code>
+
+                    <h5 class="mt-5">Valijad (Selectors)</h5>
+                    <p>
+                        Stiilide rakendamiseks peame kirjutama
+                        <code>valija</code>. Kasutame selektoreid, et määrata,
+                        milliseid HTML-i elemente meie stiilid mõjutavad. CSS-is
+                        on palju erinevaid valijaid.
+                    </p>
+                    <p>Siin on mõned kõige sagedamini kasutatavad:</p>
+
+                    <h6 class="mt-5">Sildi nimed</h6>
+                    <p>
+                        Kirjutame sildi nime ja meie stiilid mõjutavad iga
+                        määratud silti.
+                    </p>
+
+                    <div class="mb-3">
+                        <code>
+                            <pre class="bg-black p-4 rounded">
+h1 {
+    font-size: 32px;
+}
+</pre
+                            >
+                        </code>
+                    </div>
+                    <p>
+                        Selles näites on h1 valija. Iga <code>h1</code> sildi
+                        fondi suurus on 32 pikslit.
+                    </p>
+
+                    <h6 class="mt-5">CSS-i klassid</h6>
+                    <p>
+                        CSS-klassi kirjutamiseks peame kirjutama punkti ja oma
+                        klassi soovitud nime. Need stiilid mõjutavad ainult neid
+                        elemente, millel on selle klassi nimi ilma punktita
+                        atribuudis <code>class=""</code>. Ühel elemendil võib
+                        olla mitu klassi.
+                    </p>
+                    <div class="mb-3">
+                        <code>
+                            <h6
+                                class="text-end m-0 rounded-top border border-2 border-dark p-2"
+                            >
+                                example.css
+                            </h6>
+                            <pre class="bg-black p-4 rounded-bottom">
+.my-class {
+    background-color: red;
+}
+</pre
+                            >
+                        </code>
+                    </div>
+                    <div class="mb-5">
+                        <code>
+                            <h6
+                                class="text-end m-0 rounded-top border border-2 border-dark p-2"
+                            >
+                                example.html
+                            </h6>
+                            <pre class="bg-black p-4 rounded-bottom">
+&lt;div class="my-class"&gt;
+    example
+&lt;/div&gt;
+</pre
+                            >
+                        </code>
+                    </div>
+                    <p>
+                        Selles näites mõjutavad kõik
+                        <code>.my-class</code> elementi. Pidage meeles, et neid
+                        valijaid saab kombineerida. Järgmises näites töötavad
+                        need stiilid ainult koos <code>div</code>-märgenditega,
+                        mille klassides on <code>my-class</code>.
+                    </p>
+                    <div class="mb-5">
+                        <code>
+                            <pre class="bg-black p-4 rounded">
+div.my-class {
+    background-color: red;
+}
+</pre
+                            >
+                        </code>
+                    </div>
+                    <h5 class="mt-5">Stiilid</h5>
+                    <p>
+                        Pärast valija kirjutamist peame alustama stiili
+                        kujundamist. Nii et stiilielementide jaoks pole vaja
+                        muud teha, kui kirjutada <code>lokkis sulud</code> ja
+                        seejärel kirjutada atribuudi nimi ja väärtus. Ärge
+                        unustage neid <code>kooloniga</code> jagada ja iga
+                        omaduse lõppu panna <code>semikoolon</code>.
+                    </p>
+                    <p>
+                        Selles näites loome CSS-klassi
+                        <code>color</code> atribuudiga, mida kasutame teksti
+                        värvi muutmiseks. Ja meie puhul muudame selle
+                        roheliseks.
+                    </p>
+
+                    <code>
+                        <pre class="bg-black p-4 rounded">
+.my-heading {
+    color: #3ebd49;
+}
+</pre
+                        >
+                    </code>
+                    <p>
+                        Iga stiili on peaaegu võimatu seletada, sest neid on nii
+                        palju. Nii nagu HTML-märgendite puhul, ei pea te neid
+                        kõiki kohe õppima, vaid jätkake harjutamist.
+
+                        <a
+                            target="_blank"
+                            href="https://www.w3schools.com/cssref/index.php"
+                        >
+                            Kuid siin on jällegi link kõigi CSS-stiilide
+                            loendile.
+                        </a>
+                    </p>
+                    <h4 class="mt-5">JavaScript</h4>
+                    <p>
+                        See on ilmselt kõige raskem asi, mida peate esiotsa
+                        arendajaks saamiseks õppima, sest erinevalt HTML-ist ja
+                        CSS-ist on JavaScript tõeline programmeerimiskeel ja
+                        selle õppimiseks kulub palju rohkem aega.
+                    </p>
+                    <p>
+                        Kasutame oma veebisaitidele funktsioonide lisamiseks
+                        JavaScripti. JavaScripti kasutamiseks peaksite looma uue
+                        JS-faili ja ühendama selle meie HTML-failiga, nagu
+                        tegime CSS-i puhul, kuid mitte päris.
+                    </p>
+                    <p>
+                        JS-faili kaasamiseks lisage otse märgendi
+                        <code>&lt;body&gt;</code> allossa märgend
+                        <code>&lt;script&gt;</code> ja seejärel märgendile
+                        atribuut <code>src=""</code>. Selles atribuudis peate
+                        edastama tee oma JS-faili.
+                    </p>
+                    <code>
+                        <h6
+                            class="text-end m-0 rounded-top border border-2 border-dark p-2"
+                        >
+                            index.html
+                        </h6>
+                        <pre class="bg-black p-4 rounded-bottom">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+        &lt;link rel="stylesheet" href="/path/to/your/style.css" /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;!-- Your code here --&gt;
+    &lt;script src="/path/to/your/main.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre
+                        >
+                    </code>
+                    <p>
+                        Ja kuna JavaScript on lai teema, siis selles artiklis me
+                        sellest ei räägi, seega jääge tulevaste artiklite jaoks
+                        lainel! Või võite ka
+                        <a
+                            target="_blank"
+                            href="https://www.w3schools.com/js/default.asp"
+                            >seda ressurssi</a
+                        >
+                        kasutada.
+                    </p>
+                    <h4 class="mt-5">Kokkuvõtteks</h4>
+                    <p>
+                        Selles artiklis nägime ainult tohutu jäämäe tippu, mida
+                        nimetatakse veebiarenduseks. Nüüd on teil aimu esiotsas
+                        kasutatavate tehnoloogiate kohta. Mis järgmiseks?
+                        Lihtsate projektide loomisel peaksite kulutama piisavalt
+                        aega HTML-i, CSS-i ja JavaScripti õppimisele. Kui
+                        tunnete end nende tehnoloogiatega mugavalt, vaadake
+                        Bootstrapi ja ReactJS-i. Kuid ärge kiirustage, võtke
+                        aega ja nautige!
+                    </p>
+                    <p>
+                        Praeguseks see on kõik. Täname lugemise eest ja head
+                        häkkimist!
+                    </p>
+                </div>
+            </div>
+        </article>
+        <!-- Footer -->
+        <footer class="container-fluid bg-dark py-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row text-white">
+                            <div class="col-lg-2 col-md-6 col-12">
+                                <h5>> Navigatsioon</h5>
+                                <div class="d-flex flex-column gap-1">
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="#"
+                                        >Üles</a
+                                    >
+
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="/estonian.html#about-me-section"
+                                        >Minust</a
+                                    >
+
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="/estonian.html#skills-section"
+                                        >Minu oskused</a
+                                    >
+
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="/estonian.html#projects-section"
+                                        >Minu projektid</a
+                                    >
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="/estonian.html#articles-section"
+                                        >Artiklid</a
+                                    >
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="/estonian.html#feedback-section"
+                                        >Võta minuga ühendust</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-12 mt-md-0 mt-5">
+                                <h5>> Keeled</h5>
+                                <div class="d-flex flex-column gap-1">
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="/index.html"
+                                        >Inglise keel</a
+                                    >
+
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="/estonian.html"
+                                        >Eesti keel</a
+                                    >
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="/russian.html"
+                                        >Vene keel</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-12 mt-md-0 mt-5">
+                                <h5>> Minu CV</h5>
+                                <div class="d-flex flex-column gap-1">
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        target="_blank"
+                                        href="/CV/CV_Roman_Ivanov_ENG.pdf"
+                                        >CV (ENG)</a
+                                    >
+
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        target="_blank"
+                                        href="/CV/CV_Roman_Ivanov_EST.pdf"
+                                        >CV (EST)</a
+                                    >
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        target="_blank"
+                                        href="/CV/CV_Roman_Ivanov_RUS.pdf"
+                                        >CV (RUS)</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-12 mt-md-0 mt-5">
+                                <h5>> Välised lingid</h5>
+                                <div class="d-flex flex-column gap-1">
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        target="_blank"
+                                        href="https://justenough1.github.io/"
+                                        >Portfoolio</a
+                                    >
+
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        target="_blank"
+                                        href="https://github.com/JustEnough1"
+                                        >GitHub</a
+                                    >
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        target="_blank"
+                                        href="https://www.linkedin.com/in/roman-ivanov-a61816281/"
+                                        >LinkedIn</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <h6 class="text-secondary">2023 | Roman Ivanov</h6>
+                            <p class="text-secondary">
+                                roman.ivanov.dev@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

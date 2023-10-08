@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+        />
+        <title>
+            Roman Ivanov | Things to learn to get into front-end development
+        </title>
+
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+        <meta
+            name="description"
+            content="Explore my coding journey. Connect with me to collaborate and innovate in the world of software development."
+        />
+
+        <meta
+            name="keywords"
+            content="web development, front-end technologies, HTML, CSS, JavaScript, web developer, front-end developer, web development tools, web applications, web development basics, HTML tags, CSS selectors, JavaScript programming, web development skills"
+        />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://justenough1.github.io/" />
+        <meta property="og:title" content="Roman Ivanov | Web developer" />
+        <meta
+            property="og:description"
+            content="Explore my coding journey. Connect with me to collaborate and innovate in the world of software development."
+        />
+        <meta property="og:image" content="./images/portfolio-logo.svg" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://justenough1.github.io/" />
+        <meta property="twitter:title" content="Roman Ivanov | Web developer" />
+        <meta
+            property="twitter:description"
+            content="Explore my coding journey. Connect with me to collaborate and innovate in the world of software development."
+        />
+        <meta property="twitter:image" content="./images/portfolio-logo.svg" />
+
+        <meta
+            name="google-site-verification"
+            content="MyFEEBpEnHld1lLWlNXh-d7MN9mDQ3buNlJlHbeBb4w"
+        />
+    </head>
+    <body>
+        <!-- Header -->
+        <nav class="navbar sticky-top navbar-expand-lg header">
+            <div class="container">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link ps-0"
+                                href="/index.html#about-me-section"
+                                >About me</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="/index.html#skills-section"
+                                >My skills</a
+                            >
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="/index.html#projects-section"
+                                >My projects</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="/index.html#articles-section"
+                                >Articles</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="/index.html#feedback-section"
+                                >Contact me</a
+                            >
+                        </li>
+                    </ul>
+                    <ul
+                        class="navbar-nav mb-2 mb-lg-0 align-items-lg-center align-items-start"
+                    >
+                        <hr class="d-lg-none d-sm-block w-100" />
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="https://github.com/JustEnough1"
+                                target="_blank"
+                                >My GitHub</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="https://www.linkedin.com/in/roman-ivanov-a61816281/"
+                                target="_blank"
+                                >My LinkedIn</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button
+                                    class="btn dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <i class="bi bi-translate fs-4"></i>
+                                </button>
+                                <ul
+                                    class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
+                                >
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="../est/about-frontend.html"
+                                            >Eesti keeles</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item active"
+                                            href="../eng/about-frontend.html"
+                                            >English</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="../rus/about-frontend.html"
+                                            >Русский язык</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Article -->
+        <article class="container py-5">
+            <!-- Article info -->
+            <div class="row justify-content-center">
+                <div
+                    class="col-lg-7 col-12 d-flex flex-column align-items-center justify-content-center"
+                >
+                    <!-- Image -->
+                    <img
+                        id="article-image"
+                        alt=""
+                        class="w-50 rounded-circle"
+                        style="height: fit-content"
+                        src="/images/about-frontend.svg"
+                    />
+
+                    <div
+                        id="article-header"
+                        class="w-100 d-flex flex-wrap gap-1 justify-content-center"
+                    >
+                        <!-- Title -->
+                        <h1 class="text-center my-5 w-100">
+                            Things to learn to get into front-end development
+                        </h1>
+
+                        <!-- Tags -->
+                        <small class="rounded p-2 bg-success-subtle">
+                            Web development
+                        </small>
+                        <small class="rounded p-2 bg-success-subtle">
+                            Front-end
+                        </small>
+                        <small class="rounded p-2 bg-success-subtle">
+                            HTML
+                        </small>
+                        <small class="rounded p-2 bg-success-subtle">
+                            CSS
+                        </small>
+                        <small class="rounded p-2 bg-success-subtle">
+                            JavaScript
+                        </small>
+                    </div>
+                    <div
+                        id="article-links"
+                        class="w-100 mt-3 d-flex flex-lg-column flex-row gap-lg-1 gap-3 align-items-center justify-content-center"
+                    ></div>
+                </div>
+            </div>
+            <!-- Article content -->
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-7 col-12">
+                    <i class="text-secondary"
+                        >In this article, I wanted to talk about web development
+                        and the tools we use to create beautiful websites and
+                        web applications.</i
+                    >
+
+                    <h4 class="mt-5">Understanding</h4>
+                    <p>
+                        Before you start learning anything, ask yourself, do you
+                        know what web development is? In case if you don't know:
+                    </p>
+                    <p>
+                        Web development is one of the most popular areas in the
+                        IT industry, that is always in demand. As a web
+                        developer, your job is to provide high-quality code to
+                        make beautiful and reliable websites and web
+                        applications.
+                    </p>
+                    <p>
+                        Typically, web developers are divided into front-end
+                        (client) and back-end (server) developers. In this
+                        article, I want to take a closer look at front-end
+                        technologies.
+                    </p>
+
+                    <h4 class="mt-5">Your starting point</h4>
+                    <p>
+                        Front-end, as we already know, means the client side.
+                        What exactly does this mean? So, the front-end is
+                        everything that the user sees: pages, input elements,
+                        buttons, animations and other UI elements.
+                    </p>
+                    <p>
+                        So, to build these elements we need some tools.
+                        Essentially, the front-end consists of 3 main
+                        technologies:
+                    </p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <p>
+                        These technologies are core web technologies. Of course
+                        they are not the only ones, there are many other
+                        frameworks, but before we start learning about
+                        frameworks, we should familiarize ourselves with this
+                        trio.
+                    </p>
+
+                    <h4 class="mt-5">HTML</h4>
+                    <p>
+                        HTML is a Hypertext Markup Language. Don't get it,
+                        right? I prefer to think of it as a language that we use
+                        to define the skeleton of out future website. This
+                        language is pretty easy so this is where you should
+                        start your learning journey. Let's take a look at the
+                        code example.
+                    </p>
+                    <code
+                        ><h6
+                            class="text-end m-0 rounded-top border border-2 border-dark p-2"
+                        >
+                            index.html
+                        </h6>
+                        <pre class="bg-black p-4 rounded-bottom">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;!-- Your code here --&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre
+                        >
+                    </code>
+                    <p>
+                        Every HTML file should follow this structure in order to
+                        work properly.
+                    </p>
+                    <p>
+                        In HTML we use things called "tags" that look like
+                        <code>&lt;tagname&gt;&lt;/tagname&gt;</code>. There is a
+                        huge number of different tags and you probably shouldn't
+                        try to learn them all at once because over time you will
+                        use different tags over and over again and end up
+                        remembering many of them as you work with them.
+                        <a
+                            target="_blank"
+                            href="https://www.w3schools.com/tags/"
+                            >Here is a complete list of existing HTML tags.</a
+                        >
+                    </p>
+                    <p>
+                        HTML tags always must be closed. There are 2 different
+                        types of tags - traditionals and self-closing tags. The
+                        difference between them is that traditional tags must
+                        have their open and close tags (example
+                        <code>&lt;body&gt;&lt;/body&gt;</code>), when
+                        self-closing tags are opened and closed within one tag
+                        like <code>&lt;img /&gt;</code>.
+                    </p>
+                    <p>
+                        Almost every HTML tag has what are called "attributes".
+                        These are properties of an HTML tag that can change the
+                        appearance, behavior, and accessibility of the tag. Some
+                        attributes can be used across different tags, such as
+                        the <code>style=""</code> attribute, that we can use on
+                        every tag to change it's look with CSS. But not every
+                        attribute can be used in every tag, always google what
+                        attributes a particular tag has.
+                    </p>
+
+                    <p>Now let's look and explain our example:</p>
+                    <ul>
+                        <li>
+                            <p>
+                                <code>&lt;!DOCTYPE html&gt;</code> tells the
+                                browser that this is our document type. This
+                                example specifies that the document type is HTML
+                                5, the most recent version of HTML.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <code>&lt;html&gt;&lt;/html&gt;</code> plays the
+                                role of a wrapper for our HTML elements.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <code>&lt;head&gt;&lt;/head&gt;</code> is the
+                                home for our meta data, links and scripts. We
+                                use this tag to link CSS and JavaScript files so
+                                that we can use them on our page. Metadata is
+                                data that represents information about our page,
+                                such as encoding, keywords, description, or, as
+                                in our structure, a title tag. We use the title
+                                tag to give our page the name that will appear
+                                in your browser tab.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <code>&lt;body&gt;&lt;/body&gt;</code> is where
+                                we are going to write our HTML code.
+                            </p>
+                        </li>
+                    </ul>
+
+                    <h4 class="mt-5">CSS</h4>
+                    <p>
+                        We use CSS (Cascading Style Sheets) to make our HTML
+                        elements look nice. To do this, you'll need to create a
+                        new CSS file, link it to your HTML file, and start
+                        styling.
+                    </p>
+                    <p>
+                        To link your CSS file, all you need to do is use the
+                        <code>&lt;link/&gt;</code> tag in your HTML file. As we
+                        already know, we should do this in the
+                        <code>&lt;head&gt;</code> tag. Don't forget to add the
+                        <code>rel="stylesheet"</code> and
+                        <code>href="/path/to/your/style.css"</code> attributes
+                        to the <code>&lt;link/&gt;</code> tag!
+                    </p>
+                    <code>
+                        <h6
+                            class="text-end m-0 rounded-top border border-2 border-dark p-2"
+                        >
+                            index.html
+                        </h6>
+                        <pre class="bg-black p-4 rounded-bottom">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+        &lt;link rel="stylesheet" href="/path/to/your/style.css" /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;!-- Your code here --&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre
+                        >
+                    </code>
+
+                    <h5 class="mt-5">Selectors</h5>
+                    <p>
+                        To apply styles, we need to write a
+                        <code>selector</code>. We use selectors to determine
+                        which HTML elements will be affected by our styles.
+                        There are many different selectors in CSS.
+                    </p>
+                    <p>Here are some of the most commonly used:</p>
+
+                    <h6 class="mt-5">Tag names</h6>
+                    <p>
+                        We write the name of the tag and our styles will affect
+                        every tag we specify.
+                    </p>
+
+                    <div class="mb-3">
+                        <code>
+                            <pre class="bg-black p-4 rounded">
+h1 {
+    font-size: 32px;
+}
+</pre
+                            >
+                        </code>
+                    </div>
+                    <p>
+                        In this example <code>h1</code> is a selector. The font
+                        size of each h1 tag will be 32 pixels.
+                    </p>
+
+                    <h6 class="mt-5">CSS classes</h6>
+                    <p>
+                        To write a CSS class we need to write a dot and the
+                        desired name of our class. These styles will only affect
+                        those elements that have that class name without a dot
+                        in the
+                        <code>class=""</code> attribute. One element can have
+                        multiple classes.
+                    </p>
+                    <div class="mb-3">
+                        <code>
+                            <h6
+                                class="text-end m-0 rounded-top border border-2 border-dark p-2"
+                            >
+                                example.css
+                            </h6>
+                            <pre class="bg-black p-4 rounded-bottom">
+.my-class {
+    background-color: red;
+}
+</pre
+                            >
+                        </code>
+                    </div>
+                    <div class="mb-5">
+                        <code>
+                            <h6
+                                class="text-end m-0 rounded-top border border-2 border-dark p-2"
+                            >
+                                example.html
+                            </h6>
+                            <pre class="bg-black p-4 rounded-bottom">
+&lt;div class="my-class"&gt;
+    example
+&lt;/div&gt;
+</pre
+                            >
+                        </code>
+                    </div>
+                    <p>
+                        In this example every element with
+                        <code>.my-class</code> will be affected. Keep also in
+                        mind that these selectors can be combined. In the
+                        following example these styles will work only with
+                        <code>div</code> tags that have the
+                        <code>my-class</code> in classes.
+                    </p>
+                    <div class="mb-5">
+                        <code>
+                            <pre class="bg-black p-4 rounded">
+div.my-class {
+    background-color: red;
+}
+</pre
+                            >
+                        </code>
+                    </div>
+                    <h5 class="mt-5">Styles</h5>
+                    <p>
+                        After we wrote our selector we need to start styling.
+                        So, to style elements, all we need to do is write
+                        <code>curly braces</code>
+                        and then we write the property name and its value. Don't
+                        forget to divide them with a
+                        <code>colon</code> and put a <code>semicolon</code> at
+                        the end of each property.
+                    </p>
+                    <p>
+                        In this example, we create a CSS class with a
+                        <code>color</code>
+                        property that we use to change the color of the text.
+                        And in our case, we change it to green.
+                    </p>
+
+                    <code>
+                        <pre class="bg-black p-4 rounded">
+.my-heading {
+    color: #3ebd49;
+}
+</pre
+                        >
+                    </code>
+                    <p>
+                        It's almost impossible to explain every style because
+                        there are so many of them. So, just like with HTML tags,
+                        you don't have to learn them all right now, just keep
+                        practicing.
+                        <a
+                            target="_blank"
+                            href="https://www.w3schools.com/cssref/index.php"
+                        >
+                            But again, here is a link to a list of all the CSS
+                            styles.
+                        </a>
+                    </p>
+                    <h4 class="mt-5">JavaScript</h4>
+                    <p>
+                        This is probably the hardest thing you need to learn to
+                        become a front-end dev, because unlike HTML and CSS,
+                        JavaScript is a real programming language and it will
+                        take much more time to learn.
+                    </p>
+                    <p>
+                        We use JavaScript to add some functionality to our
+                        websites. To use JavaScript, you should create a new JS
+                        file and connect it to our HTML file, just like we did
+                        with CSS, but not quite.
+                    </p>
+                    <p>
+                        To include your JS file, add a
+                        <code>&lt;script&gt;</code> tag right at the bottom of
+                        the <code>&lt;body&gt;</code> tag, and then add the
+                        <code>src=""</code> attribute to the tag. In this
+                        attribute you need to pass a path to your JS file.
+                    </p>
+                    <code>
+                        <h6
+                            class="text-end m-0 rounded-top border border-2 border-dark p-2"
+                        >
+                            index.html
+                        </h6>
+                        <pre class="bg-black p-4 rounded-bottom">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+        &lt;link rel="stylesheet" href="/path/to/your/style.css" /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;!-- Your code here --&gt;
+    &lt;script src="/path/to/your/main.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre
+                        >
+                    </code>
+                    <p>
+                        And since JavaScript is a vast topic, we won't talk
+                        about it in this article, so stay tuned for future
+                        articles! Or you could use
+                        <a
+                            target="_blank"
+                            href="https://www.w3schools.com/js/default.asp"
+                            >this resource</a
+                        >
+                        as well.
+                    </p>
+                    <h4 class="mt-5">In conclusion</h4>
+                    <p>
+                        In this article we saw only the tip of a huge iceberg
+                        called web development. Now you have some idea about the
+                        technologies that are used in the front-end. What's
+                        next? You should spend enough time learning HTML, CSS,
+                        and JavaScript while creating simple projects. Once you
+                        feel comfortable with these technologies, take a look at
+                        Bootstrap and ReactJS. But do not rush, take your time
+                        and have fun!
+                    </p>
+                    <p>
+                        That's all for now. Thanks for reading and happy
+                        hacking!
+                    </p>
+                </div>
+            </div>
+        </article>
+        <!-- Footer -->
+        <footer class="container-fluid bg-dark py-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row text-white">
+                            <div class="col-lg-2 col-md-6 col-12">
+                                <h5>> Navigation</h5>
+                                <div class="d-flex flex-column gap-1">
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="#"
+                                        >To the top</a
+                                    >
+
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="/index.html#about-me-section"
+                                        >About me</a
+                                    >
+
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="/index.html#skills-section"
+                                        >My skills</a
+                                    >
+
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="/index.html#projects-section"
+                                        >My works</a
+                                    >
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="/index.html#articles-section"
+                                        >Articles</a
+                                    >
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="/index.html#feedback-section"
+                                        >Contact me</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-12 mt-md-0 mt-5">
+                                <h5>> Languages</h5>
+                                <div class="d-flex flex-column gap-1">
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="/index.html"
+                                        >English</a
+                                    >
+
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="/estonian.html"
+                                        >Estonian</a
+                                    >
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="/russian.html"
+                                        >Russian</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-12 mt-md-0 mt-5">
+                                <h5>> My CV</h5>
+                                <div class="d-flex flex-column gap-1">
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        target="_blank"
+                                        href="/CV/CV_Roman_Ivanov_ENG.pdf"
+                                        >CV (ENG)</a
+                                    >
+
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        target="_blank"
+                                        href="/CV/CV_Roman_Ivanov_EST.pdf"
+                                        >CV (EST)</a
+                                    >
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        target="_blank"
+                                        href="/CV/CV_Roman_Ivanov_RUS.pdf"
+                                        >CV (RUS)</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-12 mt-md-0 mt-5">
+                                <h5>> External links</h5>
+                                <div class="d-flex flex-column gap-1">
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        target="_blank"
+                                        href="https://justenough1.github.io/"
+                                        >Portfolio</a
+                                    >
+
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        target="_blank"
+                                        href="https://github.com/JustEnough1"
+                                        >GitHub</a
+                                    >
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        target="_blank"
+                                        href="https://www.linkedin.com/in/roman-ivanov-a61816281/"
+                                        >LinkedIn</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <h6 class="text-secondary">2023 | Roman Ivanov</h6>
+                            <p class="text-secondary">
+                                roman.ivanov.dev@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

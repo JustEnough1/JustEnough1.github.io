@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="est">
+<html lang="et">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -48,55 +48,6 @@
         />
     </head>
     <body>
-        <div
-            class="modal fade"
-            id="article-modal"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-        >
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-1" id="article-title"></h1>
-                        <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                        ></button>
-                    </div>
-                    <div
-                        class="modal-body row justify-content-lg-between overflow-x-hidden gap-lg-0 gap-5"
-                    >
-                        <div
-                            class="col-lg-6 col-12 order-lg-1 order-2 overflow-y-scroll"
-                            id="article-text"
-                            style="height: 60vh"
-                        ></div>
-                        <div
-                            class="col-lg-5 col-12 order-lg-2 order-1 d-flex flex-column align-items-center justify-content-center"
-                            id="article-info"
-                        >
-                            <img
-                                id="article-image"
-                                alt=""
-                                class="w-50 rounded-circle"
-                                style="height: fit-content"
-                            />
-                            <div
-                                id="article-technologies"
-                                class="w-100 mt-3 d-flex flex-wrap gap-1 justify-content-center"
-                            ></div>
-                            <div
-                                id="article-links"
-                                class="w-100 mt-3 d-flex flex-lg-column flex-row gap-lg-1 gap-3 align-items-center justify-content-center"
-                            ></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <nav class="navbar sticky-top navbar-expand-lg header">
             <div class="container">
                 <button
@@ -221,13 +172,25 @@
                     >
                         <a
                             href="#projects-section"
-                            class="btn btn-lg btn-outline-success me-3"
+                            class="btn d-lg-inline d-none btn-lg btn-outline-success me-3"
                         >
                             Minu projektid
                         </a>
                         <a
                             href="#feedback-section"
-                            class="btn btn-lg btn-outline-dark"
+                            class="btn d-lg-inline d-none btn-lg btn-outline-dark"
+                        >
+                            Võta minuga ühendust
+                        </a>
+                        <a
+                            href="#projects-section"
+                            class="btn d-lg-none d-inline btn-outline-success me-3"
+                        >
+                            Minu projektid
+                        </a>
+                        <a
+                            href="#feedback-section"
+                            class="btn d-lg-none d-inline btn-outline-dark"
                         >
                             Võta minuga ühendust
                         </a>
@@ -992,6 +955,40 @@
                     >
                         <div class="d-flex flex-column h-100">
                             <div class="mb-2">
+                                <small class="bg-success text-white p-1 rounded"
+                                    >Uus</small
+                                >
+                                <time>
+                                    <small class="text-secondary">
+                                        8 Okt 2023
+                                    </small></time
+                                >
+
+                                <h4 class="fw-light text-truncate mt-2">
+                                    Asjad, mida tuleb õppida, et pääseda
+                                    front-end arendusse
+                                </h4>
+                            </div>
+                            <p
+                                class="flex-grow-1 text-secondary overflow-hidden"
+                            >
+                                Mida on vaja ägedate veebisaitide loomise
+                                alustamiseks? Selles artiklis püüan anda
+                                vastuse.
+                            </p>
+                            <a
+                                class="mt-auto text-decoration-none"
+                                href="./articles/est/about-frontend.html"
+                                role="button"
+                                >Loe rohkem →</a
+                            >
+                        </div>
+                    </article>
+                    <article
+                        class="col-lg-4 col-10 border bg-white rounded p-4 article-card"
+                    >
+                        <div class="d-flex flex-column h-100">
+                            <div class="mb-2">
                                 <time>
                                     <small class="text-secondary"
                                         >21 Sep 2023</small
@@ -1009,10 +1006,7 @@
                             </p>
                             <a
                                 class="mt-auto text-decoration-none"
-                                data-bs-toggle="modal"
-                                data-bs-target="#article-modal"
-                                onclick="openArticle(event)"
-                                data-open-article="about-brever"
+                                href="./articles/est/about-brever.html"
                                 role="button"
                                 >Loe rohkem →</a
                             >
@@ -1127,7 +1121,7 @@
             </div>
         </section>
 
-        <footer class="container-fluid bg-dark p-5">
+        <footer class="container-fluid bg-dark py-5">
             <div class="row">
                 <div class="col-12">
                     <div class="container">
@@ -1167,6 +1161,27 @@
                                         class="link-light text-decoration-none text-white-50"
                                         href="#feedback-section"
                                         >Võta minuga ühendust</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-12 mt-md-0 mt-5">
+                                <h5>> Keeled</h5>
+                                <div class="d-flex flex-column gap-1">
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="./index.html"
+                                        >Inglise keel</a
+                                    >
+
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="./estonian.html"
+                                        >Eesti keel</a
+                                    >
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="./russian.html"
+                                        >Vene keel</a
                                     >
                                 </div>
                             </div>

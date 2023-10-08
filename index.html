@@ -48,55 +48,7 @@
         />
     </head>
     <body>
-        <div
-            class="modal fade"
-            id="article-modal"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-        >
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-1" id="article-title"></h1>
-                        <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                        ></button>
-                    </div>
-                    <div
-                        class="modal-body row justify-content-lg-between overflow-x-hidden gap-lg-0 gap-5"
-                    >
-                        <div
-                            class="col-lg-6 col-12 order-lg-1 order-2 overflow-y-scroll"
-                            id="article-text"
-                            style="height: 60vh"
-                        ></div>
-                        <div
-                            class="col-lg-5 col-12 order-lg-2 order-1 d-flex flex-column align-items-center justify-content-center"
-                            id="article-info"
-                        >
-                            <img
-                                id="article-image"
-                                alt=""
-                                class="w-50 rounded-circle"
-                                style="height: fit-content"
-                            />
-                            <div
-                                id="article-technologies"
-                                class="w-100 mt-3 d-flex flex-wrap gap-1 justify-content-center"
-                            ></div>
-                            <div
-                                id="article-links"
-                                class="w-100 mt-3 d-flex flex-lg-column flex-row gap-lg-1 gap-3 align-items-center justify-content-center"
-                            ></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Header -->
         <nav class="navbar sticky-top navbar-expand-lg header">
             <div class="container">
                 <button
@@ -202,6 +154,7 @@
             </div>
         </nav>
 
+        <!-- Hero section -->
         <section class="position-relative hero-section mt-5">
             <div class="container py-5">
                 <div
@@ -222,13 +175,25 @@
                     >
                         <a
                             href="#projects-section"
-                            class="btn btn-lg btn-outline-success me-3"
+                            class="btn d-lg-inline d-none btn-lg btn-outline-success me-3"
                         >
                             My works
                         </a>
                         <a
                             href="#feedback-section"
-                            class="btn btn-lg btn-outline-dark"
+                            class="btn d-lg-inline d-none btn-lg btn-outline-dark"
+                        >
+                            Contact me
+                        </a>
+                        <a
+                            href="#projects-section"
+                            class="btn d-lg-none d-inline btn-outline-success me-3"
+                        >
+                            My works
+                        </a>
+                        <a
+                            href="#feedback-section"
+                            class="btn d-lg-none d-inline btn-outline-dark"
                         >
                             Contact me
                         </a>
@@ -297,6 +262,7 @@
             </svg>
         </section>
 
+        <!-- About me section -->
         <section tabindex="0" id="about-me-section" class="py-5">
             <div class="container position-relative overflow-hidden">
                 <h3 class="text-center typing-text">
@@ -340,6 +306,7 @@
                             ></button>
                         </div>
                         <div class="carousel-inner">
+                            <!-- Carousel item -->
                             <div
                                 class="carousel-item active"
                                 data-bs-interval="900000"
@@ -409,6 +376,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- Carousel item -->
                             <div
                                 class="carousel-item"
                                 data-bs-interval="900000"
@@ -469,6 +437,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- Carousel item -->
                             <div
                                 class="carousel-item"
                                 data-bs-interval="900000"
@@ -542,6 +511,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- Carousel item -->
                             <div
                                 class="carousel-item"
                                 data-bs-interval="900000"
@@ -658,12 +628,14 @@
             </div>
         </section>
 
+        <!-- Skills section -->
         <section tabindex="0" id="skills-section" class="py-1">
             <div class="container" id="skillsSectionContent">
                 <h3 class="text-center typing-text">
                     > <span class="heading-text">My skills</span
                     ><span class="blink-text">_</span>
                 </h3>
+                <!-- Skills selector -->
                 <div
                     id="skills-buttons"
                     class="row my-3 flex-wrap overflow-scroll justify-content-md-center skills-buttons"
@@ -697,6 +669,7 @@
                         id="skills"
                         class="skills overflow-hidden flex-nowrap d-flex justify-content-lg-between justify-content-start mt-5"
                     >
+                        <!-- Skills item -->
                         <div class="col-12" id="programming-languages">
                             <div
                                 class="d-flex flex-lg-row flex-column justify-content-center gap-3"
@@ -736,6 +709,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Skills item -->
                         <div class="col-12" id="technologies">
                             <div
                                 class="d-flex flex-lg-row flex-column justify-content-center gap-3"
@@ -778,6 +752,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Skills item -->
                         <div class="col-12" id="software">
                             <div
                                 class="d-flex flex-lg-row flex-column justify-content-center gap-3"
@@ -826,6 +801,7 @@
             </div>
         </section>
 
+        <!-- Projects section -->
         <section id="projects-section" class="py-5">
             <div class="container">
                 <h3 class="text-center typing-text">
@@ -840,6 +816,7 @@
                         class="col-lg-5 col-12 gap-xxl-0 gap-3 d-lg-block d-flex"
                     >
                         <div class="row flex-lg-wrap flex-nowrap">
+                            <!-- Project -->
                             <div class="col-lg-12 col-6 my-3">
                                 <div
                                     class="card h-100"
@@ -890,6 +867,8 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Project -->
                             <div class="col-lg-12 col-6 my-3">
                                 <div
                                     class="card h-100"
@@ -935,6 +914,7 @@
                         class="col-lg-5 col-12 gap-xxl-0 gap-3 d-lg-block d-flex"
                     >
                         <div class="row flex-lg-wrap flex-nowrap">
+                            <!-- Project -->
                             <div class="col-lg-12 col-6 my-3">
                                 <div
                                     class="card h-100"
@@ -981,6 +961,7 @@
             </div>
         </section>
 
+        <!-- Articles section -->
         <section id="articles-section" class="py-5">
             <div class="container">
                 <h3 class="text-center typing-text">
@@ -988,6 +969,42 @@
                     ><span class="blink-text">_</span>
                 </h3>
                 <div class="row pt-5 gap-3 overflow-x-scroll flex-nowrap">
+                    <!-- Article -->
+                    <article
+                        class="col-lg-4 col-10 border bg-white rounded p-4 article-card"
+                    >
+                        <div class="d-flex flex-column h-100">
+                            <div class="mb-2">
+                                <small class="bg-success text-white p-1 rounded"
+                                    >New</small
+                                >
+                                <time>
+                                    <small class="text-secondary">
+                                        8 Oct 2023
+                                    </small></time
+                                >
+
+                                <h4 class="fw-light text-truncate mt-2">
+                                    Things to learn to get into front-end
+                                    development
+                                </h4>
+                            </div>
+                            <p
+                                class="flex-grow-1 text-secondary overflow-hidden"
+                            >
+                                What does it take to start creating awesome
+                                websites? In this article I will try to give the
+                                answer.
+                            </p>
+                            <a
+                                class="mt-auto text-decoration-none"
+                                href="./articles/eng/about-frontend.html"
+                                role="button"
+                                >Read more →</a
+                            >
+                        </div>
+                    </article>
+                    <!-- Article -->
                     <article
                         class="col-lg-4 col-10 border bg-white rounded p-4 article-card"
                     >
@@ -998,7 +1015,7 @@
                                         >21 Sep 2023</small
                                     ></time
                                 >
-                                <h4 class="fw-light text-truncate">
+                                <h4 class="fw-light text-truncate mt-2">
                                     About my graduation project
                                 </h4>
                             </div>
@@ -1010,10 +1027,7 @@
                             </p>
                             <a
                                 class="mt-auto text-decoration-none"
-                                data-bs-toggle="modal"
-                                data-bs-target="#article-modal"
-                                onclick="openArticle(event)"
-                                data-open-article="about-brever"
+                                href="./articles/eng/about-brever.html"
                                 role="button"
                                 >Read more →</a
                             >
@@ -1023,6 +1037,7 @@
             </div>
         </section>
 
+        <!-- Contact me section -->
         <section id="feedback-section" class="py-5">
             <div class="container my-5">
                 <div class="row justify-content-center">
@@ -1127,7 +1142,8 @@
             </div>
         </section>
 
-        <footer class="container-fluid bg-dark p-5">
+        <!-- Footer -->
+        <footer class="container-fluid bg-dark py-5">
             <div class="row">
                 <div class="col-12">
                     <div class="container">
@@ -1167,6 +1183,27 @@
                                         class="link-light text-decoration-none text-white-50"
                                         href="#feedback-section"
                                         >Contact me</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-12 mt-md-0 mt-5">
+                                <h5>> Languages</h5>
+                                <div class="d-flex flex-column gap-1">
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="./index.html"
+                                        >English</a
+                                    >
+
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="./estonian.html"
+                                        >Estonian</a
+                                    >
+                                    <a
+                                        class="link-light text-decoration-none text-white-50"
+                                        href="./russian.html"
+                                        >Russian</a
                                     >
                                 </div>
                             </div>
