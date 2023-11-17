@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="rus">
+<html lang="ru">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,13 +19,7 @@
 
         <meta
             name="keywords"
-            content="Разработчик программного обеспечения,
-        Портфолио, Роман Иванов, Эстонский язык, Эстония, Веб-разработка,
-        Выпускной проект, Обмен сообщениями в реальном времени, Веб-сокеты,
-        TypeScript, React.js, Express.js, Socket.io, MySQL, Работа в команде,
-        Аутентификация пользователей, Проект Менеджмент, Тайм-менеджмент,
-        Креативное программирование, Проблемы развития, Технические навыки,
-        Настойчивость, Адаптивность, Карьера в разработке"
+            content="Программист, Портфолио, Роман Иванов, Витрина проектов, Сотрудничество, Персональный сайт, Веб-разработка, Программирование, Витрина навыков, Самоучка, Full Stack Development, JavaScript, Python, Front-End, Back-End, UI/UX Design, Responsive Веб-дизайн, Эстонский язык, Эстония, Личностный рост"
         />
 
         <!-- Open Graph / Facebook -->
@@ -36,7 +30,7 @@
             property="og:description"
             content="Узнайте о моем путешествии по программированию. Свяжитесь со мной, чтобы сотрудничать и внедрять инновации в мире разработки программного обеспечения."
         />
-        <meta property="og:image" content="./images/portfolio-logo.svg" />
+        <meta property="og:image" content="/images/portfolio-logo.svg" />
 
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image" />
@@ -49,7 +43,7 @@
             property="twitter:description"
             content="Узнайте о моем путешествии по программированию. Свяжитесь со мной, чтобы сотрудничать и внедрять инновации в мире разработки программного обеспечения."
         />
-        <meta property="twitter:image" content="./images/portfolio-logo.svg" />
+        <meta property="twitter:image" content="/images/portfolio-logo.svg" />
 
         <meta
             name="google-site-verification"
@@ -57,7 +51,6 @@
         />
     </head>
     <body>
-        <!-- Header -->
         <nav class="navbar sticky-top navbar-expand-lg header">
             <div class="container">
                 <button
@@ -147,21 +140,21 @@
                                     <li>
                                         <a
                                             class="dropdown-item"
-                                            href="../est/about-brever.html"
+                                            href="../est/portfolio.html"
                                             >Eesti keeles</a
                                         >
                                     </li>
                                     <li>
                                         <a
                                             class="dropdown-item"
-                                            href="../eng/about-brever.html"
+                                            href="../eng/portfolio.html"
                                             >English</a
                                         >
                                     </li>
                                     <li>
                                         <a
                                             class="dropdown-item active"
-                                            href="../rus/about-brever.html"
+                                            href="../rus/portfolio.html"
                                             >Русский язык</a
                                         >
                                     </li>
@@ -172,143 +165,83 @@
                 </div>
             </div>
         </nav>
-        <!-- Article -->
-        <article class="container py-5">
-            <!-- Article info -->
-            <div class="row justify-content-center">
-                <div
-                    class="col-lg-7 col-12 d-flex flex-column align-items-center justify-content-center"
-                >
-                    <img
-                        id="article-image"
-                        alt=""
-                        class="w-50 rounded-circle"
-                        style="height: fit-content"
-                        src="/images/brever-logo.svg"
-                    />
 
-                    <div
-                        id="article-header"
-                        class="w-100 d-flex flex-wrap gap-1 justify-content-center"
-                    >
-                        <h1 class="text-center my-5 w-100">
-                            Про мой выпускной проект
-                        </h1>
-
-                        <small class="rounded p-2 bg-success-subtle"
-                            >TypeScript</small
-                        >
-                        <small class="rounded p-2 bg-success-subtle"
-                            >Socket.IO</small
-                        >
-                        <small class="rounded p-2 bg-success-subtle"
-                            >React.JS</small
-                        >
-                        <small class="rounded p-2 bg-success-subtle"
-                            >MySQL</small
-                        >
-                        <small class="rounded p-2 bg-success-subtle"
-                            >Express.JS</small
-                        >
+        <!-- Project -->
+        <main class="container my-5">
+            <div class="row">
+                <div class="d-flex col-12 align-items-center gap-3">
+                    <div class="col-2 col-lg-1">
+                        <img
+                            src="/images/portfolio-logo.svg"
+                            alt="portfolio logo"
+                            class="rounded-5"
+                            width="100%"
+                            height="100%"
+                        />
                     </div>
-                    <div
-                        id="article-links"
-                        class="w-100 mt-3 d-flex flex-lg-column flex-row gap-lg-1 gap-3 align-items-center justify-content-center"
-                    ></div>
+                    <div class="col">
+                        <h1 class="m-0">Портфолио</h1>
+                    </div>
                 </div>
             </div>
-            <!-- Article content -->
-            <div class="row justify-content-center mt-5">
-                <div class="col-lg-7 col-12">
-                    <i class="text-secondary"
-                        >В этой статье Я хотел бы написать подробнее про мой
-                        выпускной проект и поделится деталями, связанными с
-                        целями этого приложения, а также со сложностями, которые
-                        могут возникнуть во время разработки.</i
-                    >
-                    <h4 class="mt-5">Основная цель проекта</h4>
+
+            <div class="row my-3 gy-5 justify-content-between">
+                <div class="col-lg-5 order-1 order-lg-0">
+                    <h4 class="pb-2">Обзор</h4>
                     <p>
-                        Основная цель моего дипломного проекта была ясна:
-                        разработать веб-приложение для обмена сообщениями в
-                        реальном времени. Этот проект стал для меня настоящей
-                        проверкой меня как специалиста, так как по мимо работы с
-                        различными технологиями, включая TypeScript, React.js,
-                        Express.js, Socket.io и MySQL, пришлось потрудится над
-                        документацией, организацией работы в команде и другими
-                        аспектами работы разработчика.
-                    </p>
-                    <h4 class="mt-5">Выбор темы проекта</h4>
-                    <p>
-                        Мое решение выбрать данную тему проекта было вызвано
-                        моим желанием узнать о веб-сокетах и TypeScript. Я
-                        увидел в этом возможность глубже изучить эти технологии
-                        и применить их к сценарию из реального мира.
-                    </p>
-                    <h4 class="mt-5">Сотрудничество и командная работа</h4>
-                    <p>
-                        Я был не единственным кто работал над приложением. В
-                        команде был еще 1 человек, который в основном занимался
-                        дизайном приложения и документацией. Я взял на себя
-                        руководство разработкой.Это был ценный опыт совместной
-                        работы в команде, даже если это была небольшая команда
-                        из двух человек.
-                    </p>
-                    <h4 class="mt-5">Определение задачи</h4>
-                    <p>
-                        Задача проекта была достаточно простой и понятной. Она
-                        заключалась в создании удобного веб-приложения для
-                        обмена сообщениями, которое позволило бы людям
-                        переписываться в режиме реального времени.
+                        Данное портфолио — это место, где каждый может узнать
+                        больше обо мне как о человеке и специалисте. На моем
+                        сайте Вы можете найти мое резюме, проекты, репозитории
+                        GitHub, мой LinkedIn и мои короткие статьи в одном
+                        месте!
                     </p>
                     <p>
-                        Звучит просто, не так ли? Однако эта задача включала в
-                        себя множество других подзадач - аутентификация
-                        пользователей, регистрация, управление паролями,
-                        настройка профиля, управление списком друзей и, конечно
-                        же, возможности чата в реальном времени.
-                    </p>
-                    <h4 class="mt-5">Преодоление препятствий</h4>
-                    <p>
-                        Одной из наиболее серьезных проблем, с которыми я
-                        столкнулся во время работы над проектом была нехватка
-                        времени. На выполнение проекта у меня был сравнительно
-                        небольшой срок — 2 месяца, включая проектирование,
-                        создание дизайна и документация. Задача усложнялась тем,
-                        что я был очень мало знаком с веб-сокетами и TypeScript.
-                    </p>
-                    <p>
-                        Решить проблемы организации работы нам помогли Jira и
-                        ответственное отношение к выполняемой работе. Таким
-                        образом Мы смогли продолжать работу и довести свой
-                        проект до конца.
-                    </p>
-                    <h4 class="mt-5">Результаты разработки</h4>
-                    <p>
-                        В итоге цель была выполнена. Были добавлены все функции,
-                        включая аутентификацию пользователей, настройку профиля,
-                        управление списком друзей и, что наиболее важно, функцию
-                        чата в реальном времени. Мы сделали приложение
-                        функциональным и удобным для пользователя.
-                    </p>
-                    <h4 class="mt-5">Заключение</h4>
-                    <p>
-                        За время разработки я отточил свои навыки
-                        тайм-менеджмента, справился с трудностями руководства
-                        небольшой командой и приобрел навыки работы с такими
-                        технологиями, как TypeScript и Socket.IO.
-                    </p>
-                    <p>
-                        В заключение хочу сказать, что это приложение стало не
-                        просто кульминацией моего обучения в ПТУ, но и
-                        ступенькой на пути к моей карьере разработчика. Это
-                        научило меня важности настойчивости, способности к
-                        адаптации и радости воплощения творческой идеи в жизнь с
-                        помощью кода.
+                        Мой персональный сайт особенно полезен работодателям и
+                        программистам, и я стараюсь угодить обеим группам
+                        посетителей, постоянно создавая и обновляя контент. Я
+                        также открыт к различным видам сотрудничества. Вы можете
+                        легко связаться со мной напрямую на этом сайте, если у
+                        вас есть какие-либо вопросы или предложения.
                     </p>
                 </div>
+                <div class="col-lg-5 order-0 order-lg-1">
+                    <h4 class="pb-2">Детали проекта</h4>
+                    <div class="row">
+                        <div class="col-6">Период разработки</div>
+                        <div class="col-6 text-secondary">
+                            08.2023 - Настоящее время
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-6">Технологии</div>
+                        <div class="col-6 text-secondary">
+                            HTML / CSS / JavaScript
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <a
+                                type="button"
+                                href="https://github.com/JustEnough1/JustEnough1.github.io"
+                                target="_blank"
+                                class="btn btn-outline-dark"
+                            >
+                                GitHub
+                            </a>
+                            <a
+                                type="button"
+                                href="https://justenough1.github.io/"
+                                target="_blank"
+                                class="btn btn-outline-success"
+                            >
+                                Посетить сайт
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </article>
-        <!-- Footer -->
+        </main>
+
         <footer class="container-fluid bg-dark py-5">
             <div class="row">
                 <div class="col-12">
@@ -432,6 +365,9 @@
                 </div>
             </div>
         </footer>
+
         <script src="/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/animations.js"></script>
     </body>
 </html>

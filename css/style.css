@@ -38,6 +38,11 @@ small {
     font-size: 0.8125rem;
 }
 
+ul,
+ol {
+    list-style-position: inside;
+}
+
 section:not(.hero-section)::before {
     content: "";
     display: block;
